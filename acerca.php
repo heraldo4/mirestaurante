@@ -1,10 +1,10 @@
 <?php include "header.php" ?>
 
 <main class="container">
-    <h1>Acerca de Nosotros</h1>
+    <h1 class="acercaNosotros text-center">Acerca de Nosotros</h1>
     <section class="row">
-        <h2>Un poco de nosotros</h2>
-        <img class="col-md-6" src="img/estreno2.png" alt="Nuestras industrias" style="width: 100px;" >
+        <h2 class="nosotros text-center">Un poco de nosotros</h2>
+        <img class="col-md-6" src="img/Acerca/Nosotros.jpg" alt="Nuestras industrias" style="width: 50%;" >
         <p class="col-md-6">
         Salud: Como empresa la búsqueda de bienestar de los clientes conlleva en ofrecer
         alimentos frescos y acordes para mantener estilos de vidas saludables.
@@ -20,8 +20,7 @@
         </p>
     </section>
     <section class="row">
-        <h2>Nuestra Misión</h2>
-        <img class="col-md-6" src="img/estreno2.png" alt="Mision de la empresa" style="width: 100px;" >
+        <h2 class="mision text-center">Nuestra Misión</h2>
         <p class="col-md-6">
         GreenBite en la búsqueda de una experiencia culinaria saludable y deliciosa se compromete
         a lograr calidad y frescura en todos los ingredientes que usa, como empresa buscamos
@@ -29,10 +28,12 @@
         El objetivo de la compañía es basado en lograr un servicio eficiente, accesible y económico
         adaptado a las preferencias de cada cliente, el menú cuenta con variedades nutritivas con el
         fin de lograr satisfacción y bienestar en los clientes.</p>
+        <img class="col-md-6" src="img/Acerca/Mision.jpg" alt="Mision de la empresa" style="width: 50%;" >
+
     </section>
     <section class="row">
-        <h2>Nuestra Vision</h2>
-        <img class="col-md-6" src="img/estreno2.png" alt="Vision de la empresa" style="width: 100px;" >
+        <h2 class="vision text-center">Nuestra Visión</h2>
+        <img class="col-md-6" src="img/Acerca/Vision.jpg" alt="Vision de la empresa" style="width: 50%;" >
         <p class="col-md-6">
         GreenBite, como empresa busca convertirse en un referente de la industria de comida
         saludable express, impulsados por la calidad de nuestros alimentos saludables y deliciosos
