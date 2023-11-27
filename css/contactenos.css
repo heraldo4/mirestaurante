@@ -14,9 +14,6 @@ iframe {
     margin-bottom: 20px;
 }
 
-.label {
-    margin: 2px;
-}
 
 .list-unstyled {
     margin: 0px;
@@ -62,4 +59,12 @@ h4 {
 
 .btn-success:hover {
     background-color: #a1b8b2; 
+}
+
+input{
+    padding: 15px;
+}
+
+label{
+    margin-bottom: 10px !important;
 }

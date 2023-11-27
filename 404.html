@@ -1,62 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <title>Página no Encontrada</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
+    <meta charset="utf-8">
+    <title>Página no Encontrada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            line-height: 1.2;
+            margin: 0;
+        }
 
-    html {
-      color: #888;
-      display: table;
-      font-family: sans-serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-    }
+        html {
+            color: #888;
+            display: table;
+            font-family: sans-serif;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
 
-    body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
-    }
+        body {
+            background-image: url(img/error.png);
+            background-size: cover;
+            display: table-cell;
+            vertical-align: middle;
+            margin: 0;
+            padding: 2em;
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 0.8s, transform 0.8s; 
+        }
 
-    h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
-    }
+        body.loaded {
+            opacity: 1; 
+            transform: translateY(0); 
+        }
 
-    p {
-      margin: 0 auto;
-      width: 280px;
-    }
+        h1 {
+            color: #555;
+            font-size: 2em;
+            font-weight: 400;
+            transition: transform 0.8s ease-in-out; 
+        }
 
-    @media only screen and (max-width: 280px) {
+        p {
+            color: #fff;
+            margin: 0 auto;
+            width: 280px;
+            transition: transform 0.8s ease-in-out; 
 
-      body,
-      p {
-        width: 95%;
-      }
+        @media only screen and (max-width: 280px) {
 
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
-      }
+            body,
+            p {
+                width: 95%;
+            }
 
-    }
-  </style>
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+
+        }
+    </style>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.classList.add('loaded');
+        });
+    </script>
 </head>
 
 <body>
-  <h1>Error no se encontro el recurso solicitado</h1>
-  <p>Los siento, el recurso buscado no existe.</p>
+    <h1>Error: No se encontró el recurso solicitado</h1>
+    <p>Lo siento, el recurso buscado no existe.</p>
 </body>
 
 </html>
+
 <!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
