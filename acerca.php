@@ -1,11 +1,11 @@
 <?php include "header.php" ?>
 
+<h1 class="acercaNosotros text-center">Acerca de Nosotros</h1>
 <main class="container">
-    <h1 class="acercaNosotros text-center">Acerca de Nosotros</h1>
-    <section class="row">
+    <section class="about-us row">
         <h2 class="nosotros text-center">Un poco de nosotros</h2>
         <img class="col-md-6" src="img/Acerca/Nosotros.jpg" alt="Nuestras industrias" style="width: 50%;" >
-        <p class="col-md-6">
+        <p class="description-text col-md-6">
         Salud: Como empresa la búsqueda de bienestar de los clientes conlleva en ofrecer
         alimentos frescos y acordes para mantener estilos de vidas saludables.
         Variedad: La variedad que llega a ofrecer la compañía beneficia los distintos tipos de
@@ -19,9 +19,9 @@
         responsables y activos de la sociedad.
         </p>
     </section>
-    <section class="row">
+    <section class="about-us row">
         <h2 class="mision text-center">Nuestra Misión</h2>
-        <p class="col-md-6">
+        <p class="description-text col-md-6">
         GreenBite en la búsqueda de una experiencia culinaria saludable y deliciosa se compromete
         a lograr calidad y frescura en todos los ingredientes que usa, como empresa buscamos
         fomentar la elección consciente de alimentos al promover un estilo de vida equilibrado.
@@ -31,16 +31,22 @@
         <img class="col-md-6" src="img/Acerca/Mision.jpg" alt="Mision de la empresa" style="width: 50%;" >
 
     </section>
-    <section class="row">
+    <section class="about-us row">
         <h2 class="vision text-center">Nuestra Visión</h2>
         <img class="col-md-6" src="img/Acerca/Vision.jpg" alt="Vision de la empresa" style="width: 50%;" >
-        <p class="col-md-6">
+        <p class="description-text col-md-6">
         GreenBite, como empresa busca convertirse en un referente de la industria de comida
         saludable express, impulsados por la calidad de nuestros alimentos saludables y deliciosos
         que se adapten al estilo de vida de cada cliente.
         También GreenBite busca ser una marca que facilite la elección de alimentación
         consciente, con el fin de lograr un bienestar en la vida de las personas, como compañía
         buscamos que la comida saludable sea la elección natural para todos.</p>
+    </section>
+
+    <section class="socials row justify-content-center">
+        <i class="col-sm-4 fa-brands fa-facebook"></i>
+        <i class="col-sm-4 fa-brands fa-instagram"></i>
+        <i class="col-sm-4 fa-brands fa-twitter"></i>
     </section>
     
 </main>
