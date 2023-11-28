@@ -1,6 +1,5 @@
 <?php include "header.php" ?>
 
-
 <main class="container-fluid">
     <h1>Bienvenidos al Menú del Restaurante</h1>
     <p>Aquí encontrarás una variedad de deliciosos platillos para disfrutar.</p>
