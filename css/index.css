@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
 }
 
 header {
@@ -23,8 +24,8 @@ main.container {
 
 .carousel {
     position: relative;
-    height: 100vh; /* Ajusta la altura para que ocupe el 100% de la ventana */
-    overflow: hidden; /* Asegúrate de ocultar cualquier contenido que se desborde */
+    height: 100vh; 
+    overflow: hidden; 
 }
 
 .carousel-inner {
@@ -44,14 +45,14 @@ main.container {
 }
 
 h2.text-primary {
-    margin-top: 60px;
+    margin-top: 0; 
     background: #3f6766 !important;
     color: #ffffff !important;
     padding: 10px; 
 }
 
 .boton-ver-menu {
-    margin: 0px;
+    margin: 20px 0; 
     background-color: #3f6766;
     color: #ffffff;
     border: none;
@@ -71,3 +72,8 @@ p {
     font-size: 1.1em; 
     margin-bottom: 20px; 
 }
+
+#demo {
+    width: 100%;
+}
+
