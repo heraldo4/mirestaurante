@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="generator" content="">
-    <title>Dashboard CineApp</title>
+    <title>Dashboard Restaurante</title>
 
 
   
@@ -21,8 +21,8 @@
   <body>
    
 
-<header class="navbar sticky-top bg-amarillo flex-md-nowrap p-0 shadow" data-bs-theme="dark">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="index.php">CineApp</a>
+<header class="navbar sticky-top bg-green flex-md-nowrap p-0 shadow" data-bs-theme="dark">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="index.php">Mi Restaurante</a>
 
   <ul class="navbar-nav flex-row d-md-none">
     
@@ -97,3 +97,5 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
