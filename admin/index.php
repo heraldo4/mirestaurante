@@ -23,7 +23,7 @@
         break;
       case 'nuevoPelicula':
         $titulo = "Nuevo Producto";
-        require "catalogos/Productos/nuevoProductos.php";
+        require "catalogos/Productos/nuevoProducto.php";
         break;
       default:
         $titulo = "Bienvenido";
