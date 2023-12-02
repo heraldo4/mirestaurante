@@ -21,7 +21,7 @@
       case 'banners':
         $titulo = "Catálogo Banners";
         break;
-      case 'nuevoPelicula':
+      case 'nuevoProducto':
         $titulo = "Nuevo Producto";
         require "catalogos/Productos/nuevoProducto.php";
         break;

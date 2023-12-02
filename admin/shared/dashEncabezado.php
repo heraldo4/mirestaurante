@@ -15,7 +15,7 @@
 
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link href='/admin/css/dashboard.css' rel="stylesheet">
+    <link href= "css/dashboard.css" rel="stylesheet">
   </head>
   <body>
    
