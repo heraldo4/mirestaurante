@@ -63,7 +63,6 @@ $url = explode(".", $url);
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?php if ($url[0] == "contactenos") echo "active" ?>" aria-current="page" href="contactenos.php">Contáctenos</a>
-                        </li>
                     </ul>
                     <ul class="nav navbar-nav justify-content-center">
                         <form class="d-flex" id="searchForm">
@@ -83,3 +82,4 @@ $url = explode(".", $url);
         </nav>
     </header>
 </body>
+
