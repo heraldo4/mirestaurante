@@ -11,41 +11,41 @@ $app = new \Slim\App;
 //--------crud productos-----------------
 
 // insertar
-$app->post('/insproducto', function (Request $request, Response $response, array $args) {
+$app->post('/insplatillo', function (Request $request, Response $response, array $args) {
     //abrir la conexion
     $db=conectar();
     //obtener los datos a insertar
     $rec=$request->getQueryParams();
-    $res=$db->AutoExecute("tproductos",$rec,"INSERT");
+    $res=$db->AutoExecute("tplatillos",$rec,"INSERT");
     //retornar el valor que indica si se ejecuto correctamente        
     $response->getBody()->write($res);
     return $response;
 });
 
 //modificar
-$app->put('/updproducto', function (Request $request, Response $response, array $args) {
+$app->put('/updplatillos', function (Request $request, Response $response, array $args) {
     $db=conectar();
     $rec=$request->getQueryParams();
-    $res=$db->AutoExecute("tproductos",$rec,"UPDATE","id=$rec[id]");
+    $res=$db->AutoExecute("tplatillos",$rec,"UPDATE","id=$rec[id]");
     $response->getBody()->write($res);    
     return $response;
 });
 //eliminar
-$app->delete('/delproducto/{id}', function (Request $request, Response $response, array $args) {
+$app->delete('/delplatillo/{id}', function (Request $request, Response $response, array $args) {
     $id=$args["id"];
     $db=conectar();
-    $sql="DELETE FROM tproductos WHERE id=$id";
+    $sql="DELETE FROM tplatillos WHERE id=$id";
     $res=$db->execute($sql);
     $response->getBody()->write($res);
     return $response;
 });
 
 //consultas obtenr todas las peliculas
-$app->get('/getproductos', function (Request $request, Response $response, array $args) {
+$app->get('/getplatillo', function (Request $request, Response $response, array $args) {
     $db=conectar();
     //definir el tipo de fetch
     $db->SetFetchMode(ADODB_FETCH_ASSOC);
-    $sql="SELECT * FROM tproductos";
+    $sql="SELECT * FROM tplatillos";
     $res=$db->GetAll($sql);
     //respuesta en formato json
     $response->getBody()->write(json_encode($res));
@@ -53,12 +53,12 @@ $app->get('/getproductos', function (Request $request, Response $response, array
 });
 
 //consultas obtener info de una pelicula
-$app->get('/getproducto/{id}', function (Request $request, Response $response, array $args) {
+$app->get('/getplatillo/{id}', function (Request $request, Response $response, array $args) {
     $id=$args["id"];
     $db=conectar();
     //definir el tipo de fetch
     $db->SetFetchMode(ADODB_FETCH_ASSOC);
-    $sql="SELECT * FROM tproductos WHERE id=$id";
+    $sql="SELECT * FROM tplatillos WHERE id=$id";
     $res=$db->GetAll($sql);
     //respuesta en formato json
     $response->getBody()->write(json_encode($res));
@@ -66,13 +66,13 @@ $app->get('/getproducto/{id}', function (Request $request, Response $response, a
 });
 
 //consultas peliculas por nombre
-$app->get('/getproductos/{nombre}', function (Request $request, Response $response, array $args) {
+$app->get('/getplatillo/{nombre}', function (Request $request, Response $response, array $args) {
     $nombre=$args["nombre"];
 
     $db=conectar();
     //definir el tipo de fetch
     $db->SetFetchMode(ADODB_FETCH_ASSOC);
-    $sql="SELECT * FROM tproductos where nombre LIKE '%$nombre%'";
+    $sql="SELECT * FROM tplatillos where nombre LIKE '%$nombre%'";
     $res=$db->GetAll($sql);
     //respuesta en formato json
     $response->getBody()->write(json_encode($res));

@@ -16,12 +16,14 @@ body {
 }
 
 .card {
-    margin-top: 20px;
+    margin-top: 10px;
     border: 1px solid #3f6766;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #a1b8b2;
     color: #fff;
+    width: 500px; 
+    height: auto; /* Change this value to 'auto' or a specific height like '400px' */
 }
 
 .card-header {
