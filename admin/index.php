@@ -11,9 +11,9 @@
       case 'usuario':
         $titulo = "Catálogo Usuarios";
         break;
-      case 'peliculas':
-        $titulo = "Catálogo Peliculas";
-        require "catalogos/peliculas/listPeliculas.php";
+      case 'productos':
+        $titulo = "Lista Productos";
+        require "catalogos/Productos/listProductos.php";
         break;
       case 'horarios':
         $titulo = "Catálogo Horarios";
@@ -22,8 +22,8 @@
         $titulo = "Catálogo Banners";
         break;
       case 'nuevoPelicula':
-        $titulo = "Nueva Película";
-        require "catalogos/peliculas/nuevoPelicula.php";
+        $titulo = "Nuevo Producto";
+        require "catalogos/Productos/nuevoProducto.php";
         break;
       default:
         $titulo = "Bienvenido";

@@ -5,8 +5,7 @@
 
         </div>
         <div class="p-2 bd-highlight">
-
-            <a href="index.php?page=nuevoPelicula" class="btn btn-secondary"><i class="fas fa-plus"></i> Nuevo</a>
+            <a href="index.php?page=nuevoProducto" class="btn btn-secondary"><i class="fas fa-plus"></i> Nuevo</a>
         </div>
     </div>
 
@@ -22,9 +21,7 @@
                     
                 </tr>
             </thead>
-            <tbody id="datosTabla">
-                
-            </tbody>
+            <tbody id="datosTabla"></tbody>
         </table>
     </div>
 </div>

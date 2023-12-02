@@ -7,22 +7,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="generator" content="">
-    <title>Dashboard CineApp</title>
+    <title>Dashboard Restaurante</title>
 
 
   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
 
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href='/admin/css/dashboard.css' rel="stylesheet">
   </head>
   <body>
    
 
-<header class="navbar sticky-top bg-amarillo flex-md-nowrap p-0 shadow" data-bs-theme="dark">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="index.php">CineApp</a>
+<header class="navbar sticky-top bg-green flex-md-nowrap p-0 shadow" data-bs-theme="dark">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="index.php">Mi Restaurante</a>
 
   <ul class="navbar-nav flex-row d-md-none">
     
@@ -61,9 +60,9 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="index.php?page=peliculas">
-                <i class="fa-solid fa-video"></i>
-                Películas
+              <a class="nav-link d-flex align-items-center gap-2" href="index.php?page=productos">
+                <i class="fa-solid fa-utensils"></i>
+                Productos
               </a>
             </li>
             <li class="nav-item">
@@ -97,3 +96,5 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
