@@ -4,7 +4,7 @@ function cargarTabla(){
     
     $.ajax({
         type: "get",
-        url: `http://localhost/misitio/apicine/src/public/getpeliculas`,
+        url: `http://localhost/mirestaurante/apirestaurante/src/public/getproductos`,
         dataType: "JSON",
         beforeSend: function () {
           //document.querySelector(".cargando").style.visibility="visible";
@@ -18,7 +18,8 @@ function cargarTabla(){
                 <tr>
                     <td scope="col">${p.id}</td>
                     <td scope="col">${p.nombre}</td>
-                    <td scope="col">${p.director}</td>
+                    <td scope="col">${p.costo}</td>
+                    <td scope="col">${p.tipo}</td>
                     <td scope="col">${p.duracion}m</td>
                     <td scope="col">
                         <button class=" me-3 btn btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i></button>

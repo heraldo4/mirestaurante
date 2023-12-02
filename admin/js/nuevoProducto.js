@@ -8,7 +8,7 @@ document.querySelector("#guardar").onclick = () => {
   //perticion ajax
   $.ajax({
     type: "post",
-    url: `http://localhost/misitio/apicine/src/public/inspelicula?${datos}`,
+    url: `http://localhost/mirestaurante/apirestaurante/src/public/insproducto?${datos}`,
     dataType: "JSON",
     beforeSend: function () {
       //document.querySelector(".cargando").style.visibility="visible";
