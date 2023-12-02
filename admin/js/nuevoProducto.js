@@ -1,14 +1,31 @@
+if(sessionStorage.getItem("id")!=null){
+  var id=parseInt(sessionStorage.getItem("id"));
+  document.querySelector("#id").value=sessionStorage.getItem("id");
+  document.querySelector("#nombre").value=sessionStorage.getItem("nombre");
+  document.querySelector("#tipo").value=sessionStorage.getItem("tipo");
+  document.querySelector("#costo").value=sessionStorage.getItem("costo");
+  document.querySelector("#duracion").value=sessionStorage.getItem("duracion");
+  sessionStorage.clear()
+}else{
+  id=-1
+}
+
 document.querySelector("#guardar").onclick = () => {
   //alert("clic")
   //añadir parametros
-  const datos = $("#frmPelicula").serialize()
-  console.log(datos)
+  const datos = $("#frmProducto").serialize()
+  const accion=(id==-1) ? "insproducto" :"updproducto"
+  const peticion=(id==-1) ? "post" :"put"
+  peticionGuardar(accion,peticion,datos)
+}
 
-  
+function peticionGuardar(accion,peticion,datos) {
   //perticion ajax
+  url= `http://localhost/mirestaurante/apirestaurante/src/public/${accion}?${datos}`;
+  console.log(url)
   $.ajax({
-    type: "post",
-    url: `http://localhost/mirestaurante/apirestaurante/src/public/insproducto?${datos}`,
+    type: peticion,
+    url: url,
     dataType: "JSON",
     beforeSend: function () {
       //document.querySelector(".cargando").style.visibility="visible";

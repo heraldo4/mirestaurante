@@ -10,13 +10,13 @@
 
     <?php
 
-        if ($page == "peliculas") {
-            echo '<script src="js/peliculas.js"></script>';
+        if ($page == "productos") {
+            echo '<script src="js/productos.js"></script>';
         } else if ($page == "crudPeliculas") {
-            echo '<script src="js/crudPeliculas.js"></script>';
-        } else if ($page == "nuevoPelicula") {
+            echo '<script src="js/crudProductos.js"></script>';
+        } else if ($page == "nuevoProducto") {
             echo '<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>';
-            echo '<script src="js/nuevoPelicula.js"></script>';
+            echo '<script src="js/nuevoProducto.js"></script>';
         }
 
     ?>
