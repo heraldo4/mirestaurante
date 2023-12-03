@@ -10,6 +10,7 @@
     switch ($page) {
       case 'usuario':
         $titulo = "Catálogo Usuarios";
+        require "catalogos/Usuarios/listUsuarios.php";
         break;
       case 'productos':
         $titulo = "Lista Productos";
@@ -24,6 +25,10 @@
       case 'nuevoProducto':
         $titulo = "Nuevo Producto";
         require "catalogos/Productos/nuevoProducto.php";
+        break;
+      case 'nuevoUsuario':
+        $titulo = "Nuevo Usuario";
+        require "catalogos/Usuarios/nuevoUsuario.php";
         break;
       default:
         $titulo = "Bienvenido";
