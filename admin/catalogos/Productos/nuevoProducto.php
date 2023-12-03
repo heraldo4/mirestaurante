@@ -12,21 +12,21 @@
 
         </div>
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="nombre">
             <label for="nombre">Nombre</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" name="duracion" id="duracion" placeholder="Duración">
-            <label for="duracion">Costo</label>
+            <input type="text" class="form-control" name="costo" id="costo" placeholder="costo">
+            <label for="costo">Costo</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" name="tipo" id="tipo" placeholder="Tipo">
+            <input type="text" class="form-control" name="tipo" id="tipo" placeholder="tipo">
             <label for="tipo">Tipo</label>
         </div>
 
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" name="director" id="director" placeholder="Director">
-            <label for="director">Duracion</label>
+            <input type="text" class="form-control" name="duracion" id="duracion" placeholder="duracion">
+            <label for="duracion">Duracion</label>
         </div>
 
 
