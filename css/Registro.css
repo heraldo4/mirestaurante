@@ -33,7 +33,7 @@ body {
     background-color: var(--charly);
     color: var(--falcon);
     width: 500px; 
-    height: auto; /* Change this value to 'auto' or a specific height like '400px' */
+    height: auto;
 }
 
 .card-header {
