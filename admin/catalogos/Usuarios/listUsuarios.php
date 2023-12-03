@@ -5,7 +5,7 @@
 
         </div>
         <div class="p-2 bd-highlight">
-            <a href="index.php?page=nuevoProducto" class="btn btn-secondary"><i class="fas fa-plus"></i> Nuevo</a>
+            <a href="index.php?page=nuevoUsuario" class="btn btn-secondary"><i class="fas fa-plus"></i> Nuevo</a>
         </div>
     </div>
 
@@ -19,7 +19,7 @@
                     <th scope="col">Password</th>   
                 </tr>
             </thead>
-            <tbody id="datosTabla"></tbody>
+            <tbody id="datosTablaUsers"></tbody>
         </table>
     </div>
 </div>
