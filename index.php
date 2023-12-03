@@ -18,22 +18,22 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="carousel-caption d-none d-md-block text-left">
-                        <h5>Nivel 1</h5>
-                        <p class="p2">Nivel 2 - Descripción detallada aquí.</p>
+                        <h5>Vegetales</h5>
+                        <p class="p2">Nos enorgullece ofrecer una experiencia culinaria única centrada en la frescura y la vitalidad de los vegetales.</p>
                     </div>
                     <img src="img/Portada/Portada1.jpg" alt="Los Angeles" class="d-block w-100" style="object-fit: cover; height: 100%;">
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-caption d-none d-md-block text-left">
-                        <h5>Nivel 1</h5>
-                        <p class="p2">Nivel 2 - Otra descripción aquí.</p>
+                        <h5>Proteínas</h5>
+                        <p class="p2">En nuestro menú, encontrarás opciones cuidadosamente seleccionadas para nutrir tu cuerpo con platos ricos en proteínas magras</p>
                     </div>
                     <img src="img/Portada/Portada2.jpg" alt="Chicago" class="d-block w-100" style="object-fit: cover; height: 100%;">
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-caption d-none d-md-block text-left">
-                        <h5>Nivel 1</h5>
-                        <p class="p2">Nivel 2 - Otra descripción aquí.</p>
+                        <h5>Hidratación</h5>
+                        <p class="p2">Nuestro menú ofrece bebidas revitalizantes, infusiones y batidos nutritivos, diseñados para satisfacer tu sed y nutrir tu cuerpo</p>
                     </div>
                     <img src="img/Portada/Portada3.jpg" alt="New York" class="d-block w-100" style="object-fit: cover; height: 100%;">
                 </div>

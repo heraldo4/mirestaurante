@@ -87,17 +87,23 @@ h2.text-primary {
 .p2 {
     text-align: left;
     margin-bottom: 20%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--falcon);
     font-weight: bold;
+    height: 100px;
+    width: 400px;
+    background-color: rgba(252, 252, 252, 0.74);
+    padding: 10px;
 }
 
 h5{ 
     font-weight: bold;
     color:var(--falcon);
     text-align: left; 
-    margin-bottom: 1%;
     font-size: 2rem;
+    height: 50px;
+    width: 200px;
+    background-color: rgba(252, 252, 252, 0.74);
 
 }
 

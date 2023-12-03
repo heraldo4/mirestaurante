@@ -1,61 +1,33 @@
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    background-color: #a1b8b2;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+}
+
+.container-fluid {
     height: 100vh;
 }
 
-.container {
-    max-width: 1000px;
-    margin: auto;
-}
-
 .card {
-    margin-top: 20px;
-    border: 1px solid #3f6766;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #a1b8b2;
-    color: #fff;
+    
+    margin: 500px;
+    border: none;
+    overflow: hidden;
+
 }
 
-.card-header {
-    background-color: #3f6766;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
+.card-img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .card-body {
-    padding: 20px;
-    background-color: #a1b8b2;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    font-weight: bold;
-}
-
-.form-control {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #a1b8b2;
-    border-radius: 4px;
+    padding: 50px;
 }
 
 .btn-primary {
     background-color: #3f6766;
     border: none;
+    transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
@@ -64,4 +36,17 @@ label {
 
 .btn-block {
     width: 100%;
+}
+
+/* Optional: Shadow for the card */
+.shadow-lg {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group{
+    font-size: 1.2rem;
+}
+
+.card-title{
+    font-weight: bold;
 }
