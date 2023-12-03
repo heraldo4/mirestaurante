@@ -49,19 +49,19 @@
           <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="index.php">
+                <a class="nav-link d-flex align-items-center gap-2 <?php if( $url[0]=="index") echo "active"?>" aria-current="page" href="index.php">
                   <i class="fa-solid fa-house"></i>
                   Dashboard
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="index.php?page=usuario">
+                <a class="nav-link d-flex align-items-center gap-2 <?php if( $url[0]=="usuario") echo "active"?>" href="index.php?page=usuario">
                   <i class="fa-solid fa-user"></i>
                   Usuarios
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="index.php?page=productos">
+                <a class="nav-link d-flex align-items-center gap-2 <?php if( $url[0]=="productos") echo "active"?>" href="index.php?page=productos">
                   <i class="fa-solid fa-utensils"></i>
                   Productos
                 </a>

@@ -4,7 +4,7 @@ function cargarTabla(){
     
     $.ajax({
         type: "get",
-        url: `http://localhost/mirestaurante/apirestaurante/src/public/getproductos`,
+        url: `http://localhost/mirestaurante/apirestaurante/src/public/getplatillos`,
         dataType: "JSON",
         beforeSend: function () {
           //document.querySelector(".cargando").style.visibility="visible";

@@ -11,7 +11,6 @@ if(sessionStorage.getItem("id")!=null){
   }
   
   document.querySelector("#guardar").onclick = () => {
-    //alert("clic")
     //añadir parametros
     const datos = $("#frmUsuario").serialize()
     const accion=(id==-1) ? "insusuario" :"updusuario"
@@ -33,7 +32,6 @@ if(sessionStorage.getItem("id")!=null){
       },
       success: function (res) {
         //instrucciones success
-        //console.log(res)
         Swal.fire({
           title: "Mensaje",
           text: "¡Datos Guardados Correctamente!",

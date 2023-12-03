@@ -1,14 +1,10 @@
 cargarTablaUsers();
-
 function cargarTablaUsers(){
-    
     $.ajax({
         type: "get",
-        url: `http://localhost/mirestaurante/apirestaurante/src/public/getUsuarios`,
+        url: `http://localhost/mirestaurante/apirestaurante/src/public/getusuarios`,
         dataType: "JSON",
         beforeSend: function () {
-          //document.querySelector(".cargando").style.visibility="visible";
-    
         },
         success: function (res) {
             
@@ -26,7 +22,6 @@ function cargarTablaUsers(){
                         <button class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i></button>
                     </td>
                 </tr>
-                
                 `
             });
             document.querySelector("#datosTablaUsers").innerHTML=filas
@@ -36,7 +31,6 @@ function cargarTablaUsers(){
           console.log(xhr.statusText + xhr.responseText);
         },
         complete: function () {
-          //document.querySelector(".cargando").style.visibility="hidden";
         }
       });
 }

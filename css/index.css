@@ -29,8 +29,17 @@ main.container {
 }
 
 .carousel-inner {
+    margin: 0px;
     width: 100%;
     height: 100%;
+    border: 1px solid var(--bravo);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-item {
@@ -38,17 +47,15 @@ main.container {
     height: 100%;
 }
 
-.carousel-item img {
+/* .carousel-item img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
+} */
 
 h2.text-primary {
-    margin-top: 0; 
+    margin-top: 60px; 
     background: #3f6766 !important;
     color: #ffffff !important;
-    padding: 60px; 
+    padding: 20px; 
 }
 
 .boton-ver-menu {
@@ -67,13 +74,64 @@ h2.text-primary {
     background-color: #a1b8b2;
 }
 
-p {
+.p1 {
     color: #333; 
     font-size: 1.1em; 
-    margin-bottom: 20px; 
+    margin-bottom: 25px; 
 }
 
 #demo {
     width: 100%;
 }
 
+.p2 {
+    text-align: left;
+    margin-bottom: 20%;
+    font-size: 1.2rem;
+    color: var(--falcon);
+    font-weight: bold;
+}
+
+h5{ 
+    font-weight: bold;
+    color:var(--falcon);
+    text-align: left; 
+    margin-bottom: 1%;
+    font-size: 2rem;
+
+}
+
+/* Estilo inicial para ocultar los elementos fuera de la pantalla */
+.carousel-caption-hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    -moz-transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    -ms-transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    -o-transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* Estilo final para mostrar los elementos en su ubicación original */
+.carousel-caption-visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.rounded-circle{
+    margin-bottom: 50px;
+}
+
+
+h6{
+    font-size: 1.5rem;
+}
+
+.p3{
+    font-size: 1.2rem;
+    margin: 0 300px 0 300px;
+}
+
+.background-image{
+    border: solid var(--echo);
+}
