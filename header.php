@@ -73,8 +73,8 @@ $url = explode(".", $url);
                                     <i class="fa-solid fa-magnifying-glass fa-bounce fa-xs"></i>
                                 </button>
                             </div>
-                            <button class="btn btn-inicio" type="button">Iniciar <i class="fa-solid fa-user fa-xs"></i></button>
-                            <button class="btn btn-registrarse" type="button">Registro <i class="fa-solid fa-registered fa-xs"></i></button>
+                            <button class="btn btn-inicio" type="button" onclick="window.location.href='InicioSesion.php';">Iniciar <i class="fa-solid fa-user fa-xs"></i></button>
+                            <button class="btn btn-registrarse" type="button" onclick="window.location.href='Registro.php';">Registro <i class="fa-solid fa-registered fa-xs"></i></button>
                         </form>
                     </ul>
                 </div>
