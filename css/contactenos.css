@@ -9,10 +9,10 @@
     --falcon: #0D0D0D;
 }
     
-iframe {
+/* iframe {
     margin-top: 61px;
     margin-bottom: 20px;
-}
+} */
 
 
 .list-unstyled {
@@ -49,6 +49,7 @@ h4 {
     position: relative;
     background-size: cover;
     background-position: bottom;
+    margin-top: 100px;
 }
 
 
