@@ -18,6 +18,13 @@
             echo '<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>';
             echo '<script src="js/nuevoProducto.js"></script>';
         }
+        else if ($page == "usuario") {
+            echo '<script src="js/usuario.js"></script>';
+        } else if ($page == "nuevoUsuario") {
+            echo '<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>';
+            echo '<script src="js/nuevoUsuario.js"></script>';
+        }
+
 
     ?>
 </body>

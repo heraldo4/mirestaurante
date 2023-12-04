@@ -13,8 +13,8 @@ if(sessionStorage.getItem("id")!=null){
 document.querySelector("#guardar").onclick = () => {
   //alert("clic")
   //añadir parametros
-  const datos = $("#frmProducto").serialize()
-  const accion=(id==-1) ? "insproducto" :"updproducto"
+  const datos = $("#frmProductos").serialize()
+  const accion=(id==-1) ? "insplatillo" :"updplatillo"
   const peticion=(id==-1) ? "post" :"put"
   peticionGuardar(accion,peticion,datos)
 }
