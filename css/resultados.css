@@ -10,16 +10,16 @@ body {
 }
 
 main {
-    margin-top: 50px; /* Ajusta el valor según sea necesario */
+    margin-top: 50px; 
 }
 
 #resultados {
-    margin-top: 230px; /* Ajusta el valor según sea necesario */
+    margin-top: 230px; 
     text-align: center;
 }
 
 #noResultados {
-    margin-top: 230px; /* Ajusta el valor según sea necesario */
+    margin-top: 230px; 
     text-align: center;
     width: 50%;
     max-width: 400px;
