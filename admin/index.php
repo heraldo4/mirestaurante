@@ -13,7 +13,7 @@
         require "catalogos/Usuarios/listUsuarios.php";
         break;
       case 'productos':
-        $titulo = "Lista Productos";
+        $titulo = "Productos";
         require "catalogos/Productos/listProductos.php";
         break;
       case 'horarios':

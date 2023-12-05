@@ -1,25 +1,23 @@
-<h2 class="my-5 mx-5"><?php echo $titulo ?></h2>
 <div class="container">
-    <div class="d-flex bd-highlight mb-3">
-        <div class="me-auto p-2 bd-highlight">
+    <h2 class="my-3 mx-5"><?php echo $titulo ?></h2>
 
-        </div>
-        <div class="p-2 bd-highlight">
-            <a href="index.php?page=nuevoUsuario" class="btn btn-secondary"><i class="fas fa-plus"></i> Nuevo</a>
-        </div>
-    </div>
-
-    <div class="table-responsive">
+    <div class="table-responsive mb-3">
         <table class="table text-center">
             <thead>
                 <tr>
                     <th scope="col">Id</th>
-                    <th scope="col">Username</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Password</th>   
+                    <th scope="col">Usuario</th>
+                    <th scope="col">Contraseña</th>
+                    <th scope="col">Correo Electronico</th>
+                   
                 </tr>
             </thead>
-            <tbody id="datosTablaUsers"></tbody>
+            <tbody id="datosTablaUsuarios"></tbody>
         </table>
     </div>
+
+    <div class="d-flex justify-content-end">
+        <a href="index.php?page=nuevoUsuario" class="btn btn-secondary btn-nuevo"><i class="fas fa-plus"></i> Nuevo</a>
+    </div>
 </div>
+

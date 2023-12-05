@@ -3,7 +3,7 @@
     <input type="hidden" id="id" name="id">    
     <div class="d-flex justify-content-center bd-highlight mb-3">
             <div class="p-2 bd-highlight">
-                <a href="index.php?page=productos" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Regresar</a>
+              <a href="index.php?page=productos" class="btn btn-secondary btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</a>
             </div>
 
             <div class="me-auto p-2 bd-highlight ">
@@ -36,7 +36,7 @@
         </div>
 
         <div class="mb-3">
-            <button id="guardar" type="button" class="btn btn-outline-dark">Guardar</button>
-            <button id="cancelar" type="reset" class="btn btn-outline-dark">Cancelar</button>
+          <button id="guardar" type="button" class="btn btn-outline-dark">Guardar</button>
+          <button id="cancelar" type="reset" class="btn btn-outline-dark">Cancelar</button>
         </div>
     </form>
