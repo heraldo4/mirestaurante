@@ -65,11 +65,11 @@ $url = explode(".", $url);
                             <a class="nav-link <?php if ($url[0] == "contactenos") echo "active" ?>" aria-current="page" href="contactenos.php">Contáctenos</a>
                     </ul>
                     <ul class="nav navbar-nav justify-content-center">
-                        <form class="d-flex" id="searchForm">
+                        <form id="frmBusqueda"action="resultados.php"class="d-flex"role="search"  >
                             <script src="https://kit.fontawesome.com/f360adb569.js" crossorigin="anonymous"></script>
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Buscar">
-                                <button class="btn btn-buscar btn-busbar" type="button">
+                                <input id="txtBuscar" class="form-control" type="search"placeholder="Buscar">
+                                <button class="btn btn-buscar" type="button">
                                     <i class="fa-solid fa-magnifying-glass fa-bounce fa-xs"></i>
                                 </button>
                             </div>

@@ -56,8 +56,8 @@ $app->get('/getplatillo', function (Request $request, Response $response, array 
     return $response;
 });
 
-//consultas obtener info de una pelicula
-$app->get('/getplatilloID/{id}', function (Request $request, Response $response, array $args) {
+//consultas obtener info de un platillo por el ID
+$app->get('/getplatillos/{id}', function (Request $request, Response $response, array $args) {
     $id = $args["id"];
     $db = conectar();
     $db->SetFetchMode(ADODB_FETCH_ASSOC);
@@ -67,7 +67,7 @@ $app->get('/getplatilloID/{id}', function (Request $request, Response $response,
     return $response;
 });
 
-//consultas peliculas por nombre
+//consultas del platillo por nombre
 $app->get('/getplatillo/{nombre}', function (Request $request, Response $response, array $args) {
     $nombre = $args["nombre"];
     $db = conectar();
