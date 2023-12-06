@@ -21,7 +21,7 @@ document.querySelector("#guardar").onclick = () => {
 
 function peticionGuardar(accion,peticion,datos) {
   //perticion ajax
-  url= `http://localhost/mirestaurante/apirestaurante/src/public/${accion}?${datos}`;
+ let url= `http://localhost/mirestaurante/apirestaurante/src/public/${accion}?${datos}`;
   console.log(url)
   $.ajax({
     type: peticion,

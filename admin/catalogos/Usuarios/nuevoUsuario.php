@@ -17,16 +17,17 @@
         </div>
         <div class="form-floating mb-3">
             <input type="text" class="form-control" name="username" id="username" placeholder="Username">
-            <label for="duracion">Username</label>
+            <label for="username">Username</label>
         </div>
+       
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" name="email" id="email" placeholder="Email">
-            <label for="tipo">Email</label>
+            <input type="text" class="form-control" name="password" id="password" placeholder="Password">
+            <label for="password">Password</label>
         </div>
 
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" name="password" id="password" placeholder="Password">
-            <label for="director">Password</label>
+            <input type="text" class="form-control" name="gmail" id="gmail" placeholder="Gmail">
+            <label for="gmail">Email</label>
         </div>
 
 

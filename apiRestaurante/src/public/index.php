@@ -129,6 +129,16 @@ $app->get('/getusuarioID/{id}', function (Request $request, Response $response, 
     return $response;
 });
 
+$app->get('/getusuario/{nombre}', function (Request $request, Response $response, array $args) {
+    $nombre = $args["nombre"];
+    $db = conectar();
+    $db->SetFetchMode(ADODB_FETCH_ASSOC);
+    $sql = "SELECT * FROM tusuarios WHERE nombre LIKE '%$nombre%'";
+    $res = $db->GetAll($sql);
+    $response->getBody()->write(json_encode($res));
+    return $response;
+});
+
 // Obtener datos de todos los usuarios
 $app->get('/getusuario', function (Request $request, Response $response, array $args) {
     $db = conectar();

@@ -6,9 +6,10 @@
             <thead>
                 <tr>
                     <th scope="col">Id</th>
-                    <th scope="col">Usuario</th>
-                    <th scope="col">Contraseña</th>
-                    <th scope="col">Correo Electronico</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Email</th>
                    
                 </tr>
             </thead>
