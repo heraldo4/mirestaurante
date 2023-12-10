@@ -15,7 +15,7 @@ if ($verificar_usuario && $verificar_usuario->RecordCount() > 0) {
     echo '
     <script>
     alert("El usuario ya existe. Por favor, elige otro nombre de usuario."); 
-    window.location.href = "/mirestaurante//InicioSesion.php";
+    window.location.href = "/mirestaurante//registro.php";
     </script>
     ';
     exit();
@@ -27,7 +27,7 @@ if ($verificar_correo && $verificar_correo->RecordCount() > 0) {
     echo '
     <script>
     alert("El correo electrónico ya existe. Por favor, elige otro correo electrónico."); 
-    window.location.href = "/mirestaurante//InicioSesion.php";
+    window.location.href = "/mirestaurante//registro.php";
     </script>
     ';
     exit();
