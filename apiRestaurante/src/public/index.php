@@ -111,13 +111,6 @@ $app->delete('/deleteusuario/{id}', function (Request $request, Response $respon
     return $response;
 });
 
-// Iniciar sesión 
-$app->get('/inicio_sesion/{password}', function (Request $request, Response $response, array $args) {
-    $password = $args["password"];
-    $response->getBody()->write("Iniciar sesión con contraseña: $password");
-    return $response;
-});
-
 // Obtener datos de usuario por ID
 $app->get('/getusuarioID/{id}', function (Request $request, Response $response, array $args) {
     $id = $args["id"];

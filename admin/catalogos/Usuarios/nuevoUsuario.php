@@ -15,24 +15,29 @@
             <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
             <label for="nombre">Nombre</label>
         </div>
+
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" name="username" id="username" placeholder="Username">
-            <label for="username">Username</label>
+            <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Usuario">
+            <label for="usuario">Usuario</label>
         </div>
-       
+
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" name="password" id="password" placeholder="Password">
-            <label for="password">Password</label>
+            <input type="text" class="form-control" name="contrasena" id="contrasena" placeholder="Contraseña">
+            <label for="contrasena">Contraseña</label>
         </div>
 
         <div class="form-floating mb-3">
             <input type="text" class="form-control" name="gmail" id="gmail" placeholder="Gmail">
-            <label for="gmail">Email</label>
+            <label for="gmail">Gmail</label>
         </div>
 
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="rol" id="rol" placeholder="Rol">
+            <label for="rol">Rol</label>
+        </div>
 
         <div class="form-floating mb-3">
-            <input type="file" class="form-control" name="imagen" id="imagen" placeholder="imagen">
+            <input type="file" class="form-control" name="imagen" id="imagen" placeholder="Imagen">
             <label for="imagen">Imagen</label>
         </div>
 

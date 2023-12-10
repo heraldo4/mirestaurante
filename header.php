@@ -2,6 +2,13 @@
 $url = basename($_SERVER["PHP_SELF"]);
 $url = explode(".", $url);
 //var_dump($url[0])
+if (!isset($_SESSION)) {
+    session_start();
+}
+
+// Verifica si el usuario es un administrador (si ha iniciado sesión)
+$is_admin = isset($_SESSION['rol']) && $_SESSION['rol'] === 'admin';
+
 ?>
 
 <!doctype html>
@@ -27,11 +34,14 @@ $url = explode(".", $url);
 
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/<?php echo $url[0] ?>.css">
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="css/<?php echo $url[0] ?>.css">
+    <script src="https://kit.fontawesome.com/f360adb569.js" crossorigin="anonymous"></script>
+
+    
 </head>
 
 <body>
@@ -65,10 +75,10 @@ $url = explode(".", $url);
                             <a class="nav-link <?php if ($url[0] == "contactenos") echo "active" ?>" aria-current="page" href="contactenos.php">Contáctenos</a>
                     </ul>
                     <ul class="nav navbar-nav justify-content-center">
-                        <form id="frmBusqueda"action="resultados.php"class="d-flex"role="search"  >
+                        <form id="frmBusqueda" action="resultados.php" class="d-flex" role="search">
                             <script src="https://kit.fontawesome.com/f360adb569.js" crossorigin="anonymous"></script>
                             <div class="input-group">
-                                <input id="txtBuscar" class="form-control" type="search"placeholder="Buscar">
+                                <input id="txtBuscar" class="form-control" type="search" placeholder="Buscar">
                                 <button class="btn btn-buscar" type="button">
                                     <i class="fa-solid fa-magnifying-glass fa-bounce fa-xs"></i>
                                 </button>
@@ -76,10 +86,17 @@ $url = explode(".", $url);
                             <button class="btn btn-inicio" type="button" onclick="window.location.href='InicioSesion.php';">Iniciar <i class="fa-solid fa-user fa-xs"></i></button>
                             <button class="btn btn-registrarse" type="button" onclick="window.location.href='Registro.php';">Registro <i class="fa-solid fa-registered fa-xs"></i></button>
                         </form>
+                        <?php if (isset($_SESSION['rol']) && $is_admin) : ?>
+                            <li class="nav-item">
+                                <a href="/mirestaurante/admin/" class="nav-link">
+                                    <i class="fas fa-user-shield fa-lg" onclick="window.location.href='/mirestaurante/admin/'"></i>
+                                </a>
+                            </li>
+                        <?php endif; ?>
+
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 </body>
-

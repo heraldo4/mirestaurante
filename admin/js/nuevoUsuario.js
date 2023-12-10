@@ -2,9 +2,10 @@ if(sessionStorage.getItem("id")!=null){
     var id=parseInt(sessionStorage.getItem("id"));
     document.querySelector("#id").value=sessionStorage.getItem("id");
     document.querySelector("#nombre").value=sessionStorage.getItem("nombre");
-    document.querySelector("#username").value=sessionStorage.getItem("username");
-    document.querySelector("#password").value=sessionStorage.getItem("password");
+    document.querySelector("#usuario").value=sessionStorage.getItem("usuario");
+    document.querySelector("#contrasena").value=sessionStorage.getItem("contrasena");
     document.querySelector("#gmail").value=sessionStorage.getItem("gmail");
+    document.querySelector("#rol").value=sessionStorage.getItem("rol");
     sessionStorage.clear()
   }else{
     id=-1

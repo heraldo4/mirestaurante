@@ -20,7 +20,7 @@
                 <div class="col-md-6">
                     <div class="card-body">
                         <h2 class="card-title text-center mb-4">Registro de Usuarios</h2>
-                        <form action="procesar_registro.php" method="post">
+                        <form action="apiRestaurante/src/public/procesar_registro.php" method="post">
                             <div class="form-group">
                                 <label for="usuario">
                                     <i class="fas fa-user"></i> Usuario:

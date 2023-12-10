@@ -14,9 +14,10 @@ function cargarTablaUsers(){
                 <tr>
                     <td scope="col">${p.id}</td>
                     <td scope="col">${p.nombre}</td>
-                    <td scope="col">${p.username}</td>
-                    <td scope="col">${p.password}m</td>
-                    <td scope="col">${p.email}</td>
+                    <td scope="col">${p.usuario}</td>
+                    <td scope="col">${p.contrasena}</td>
+                    <td scope="col">${p.gmail}</td>
+                    <td scope="col">${p.rol}</td>
                     <td scope="col">
                         <button class=" me-3 btn btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i></button>
                         <button class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i></button>
@@ -46,9 +47,10 @@ document.querySelector("#datosTablaUsuarios").addEventListener("click", (e) => {
         //generar variables de sesion
         sessionStorage.setItem("id",e.target.closest("tr").childNodes[1].innerHTML)
         sessionStorage.setItem("nombre",e.target.closest("tr").childNodes[3].innerHTML)
-        sessionStorage.setItem("costo",e.target.closest("tr").childNodes[5].innerHTML)
-        sessionStorage.setItem("tipo",e.target.closest("tr").childNodes[7].innerHTML)
-        sessionStorage.setItem("duracion",e.target.closest("tr").childNodes[9].innerHTML)
+        sessionStorage.setItem("usuario",e.target.closest("tr").childNodes[5].innerHTML)
+        sessionStorage.setItem("contresena",e.target.closest("tr").childNodes[7].innerHTML)
+        sessionStorage.setItem("gmail",e.target.closest("tr").childNodes[9].innerHTML)
+        sessionStorage.setItem("rol",e.target.closest("tr").childNodes[11].innerHTML)
   
         location.href="index.php?page=nuevoUsuario";
       }

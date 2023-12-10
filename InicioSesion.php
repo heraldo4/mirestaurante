@@ -17,7 +17,7 @@
                 <div class="col-md-6">
                     <div class="card-body">
                         <h2 class="card-title text-center mb-4">Iniciar Sesión</h2>
-                        <form action="procesar_login.php" method="post">
+                        <form action="apiRestaurante/src/public/procesar_login.php" method="post">
                             <div class="form-group">
                                 <label for="usuario">
                                     <i class="fas fa-user"></i> Usuario:
