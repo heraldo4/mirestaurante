@@ -1,5 +1,5 @@
 <div class="container">
-    <h2 class="my-3 mx-5"><?php echo $titulo ?></h2>
+    <h2 class="my-3 mx-6"><?php echo $titulo ?></h2>
 
     <div class="table-responsive mb-3">
         <table class="table text-center">
@@ -11,15 +11,16 @@
                     <th scope="col">Contraseña</th>
                     <th scope="col">Gmail</th>
                     <th scope="col">Rol</th>
-                   
+
+                    <div>
+                    <a href="index.php?page=nuevoUsuario" class="btn btn-secondary btn-nuevo"><i class="fas fa-plus"></i> Nuevo</a>
+                    </div>
                 </tr>
+               
             </thead>
             <tbody id="datosTablaUsuarios"></tbody>
         </table>
     </div>
 
-    <div class="d-flex justify-content-end">
-        <a href="index.php?page=nuevoUsuario" class="btn btn-secondary btn-nuevo"><i class="fas fa-plus"></i> Nuevo</a>
-    </div>
-</div>
 
+</div>

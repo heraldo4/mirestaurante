@@ -18,9 +18,9 @@ function cargarTablaUsers(){
                     <td scope="col">${p.contrasena}</td>
                     <td scope="col">${p.gmail}</td>
                     <td scope="col">${p.rol}</td>
-                    <td scope="col">
-                        <button class=" me-3 btn btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                        <button class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i></button>
+                    <td scope="col" class="btn-users">
+                        <button class=" me-3 btn btn-outline-secondary"><i class="fa-regular fa-pen-to-square"></i></button>
+                        <button class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></button>
                     </td>
                 </tr>
                 `
@@ -41,7 +41,7 @@ function cargarTablaUsers(){
 //definir un eventlister al padre de los nodos dinamicos
 document.querySelector("#datosTablaUsuarios").addEventListener("click", (e) => {
     //discriminar los nodos a aplicar el evento
-    if (e.target.classList.contains("btn-outline-warning") ||
+    if (e.target.classList.contains("btn-outline-secondary") ||
       e.target.classList.contains("fa-pen-to-square")) {
       {
         //generar variables de sesion
@@ -54,8 +54,8 @@ document.querySelector("#datosTablaUsuarios").addEventListener("click", (e) => {
   
         location.href="index.php?page=nuevoUsuario";
       }
-    } else if (e.target.classList.contains("btn-outline-danger") ||
-      e.target.classList.contains("fa-trash")) {
+    } else if (e.target.classList.contains("btn-outline-secondary") ||
+      e.target.classList.contains("fa-trash-can")) {
       eliminar(e.target.closest("tr").childNodes[1].innerHTML)
       e.target.closest("tr").parent(e.target.closest("tr"));
     }

@@ -19,8 +19,8 @@
       case 'horarios':
         $titulo = "Catálogo Horarios";
         break;
-      case 'banners':
-        $titulo = "Catálogo Banners";
+      case 'pedidos':
+        $titulo = "Catálogo Pedidos";
         break;
       case 'nuevoProducto':
         $titulo = "Nuevo Producto";

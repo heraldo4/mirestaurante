@@ -143,10 +143,7 @@ h2 {
   margin-top: 10px;
 }
 
-.btn-nuevo {
-  position: relative;
-  top: -15px;   
-  left: -40px;  
+.btn-nuevo {  
   background-color: #3f6766;
   color: #ffffff;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -192,6 +189,13 @@ h2 {
   background-color: #3f6766;
   color: #ffffff; 
 }
+
+.me-auto{
+  margin-left: -170px;
+  margin-top: 50px;
+}
+
+
 
 
 
