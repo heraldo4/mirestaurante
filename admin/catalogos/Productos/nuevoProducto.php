@@ -1,4 +1,4 @@
-<form id="frmProductos" class="w-90 m-auto my-3" action="" method="POST" enctype="multipart/form-data">
+<form id="frmUsuario" class="w-40 m-auto mx-3 my-3" action="" method="GET" enctype="multipart/form-data">
     <input type="hidden" id="id" name="id">
     <div class="container">
         <div class="p-3 bd-highlight">
