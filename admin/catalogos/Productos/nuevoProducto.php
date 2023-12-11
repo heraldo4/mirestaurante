@@ -9,8 +9,9 @@
             <h2>Catálogo Menú</h2>
         </div>
 
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="nombre">
+        <div class="mb-3">
+            <div class="form-floating">
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
                 <label for="nombre">Nombre</label>
             </div>
         </div>
@@ -20,27 +21,30 @@
                 <input type="text" class="form-control" name="costo" id="costo" placeholder="Costo">
                 <label for="costo">Costo</label>
             </div>
+        </div>
 
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="tipo" id="tipo" placeholder="tipo">
+        <div class="mb-3">
+            <div class="form-floating">
+                <input type="text" class="form-control" name="tipo" id="tipo" placeholder="Tipo">
                 <label for="tipo">Tipo</label>
             </div>
         </div>
 
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="duracion" id="duracion" placeholder="duracion">
-                <label for="duracion">Duracion</label>
-            </div>
-
-            <div class="mb-3">
-                <label for="imagen">Imagen</label>
-                <input type="file" class="form-control" name="imagen" id="imagen" accept="image/*">
-            </div>
-
-            <div class="mb-3">
-                <button id="guardar" type="button" class="btn btn-outline-dark">Guardar</button>
-                <button id="cancelar" type="reset" class="btn btn-outline-dark">Cancelar</button>
+        <div class="mb-3">
+            <div class="form-floating">
+                <input type="text" class="form-control" name="duracion" id="duracion" placeholder="Duración">
+                <label for="duracion">Duración</label>
             </div>
         </div>
 
+        <div class="mb-3">
+            <label for="imagen">Imagen</label>
+            <input type="file" class="form-control" name="imagen" id="imagen" accept="image/*">
+        </div>
+
+        <div class="mb-3 text-center">
+            <button id="guardar" type="button" class="btn btn-outline-dark">Guardar</button>
+            <button id="cancelar" type="reset" class="btn btn-outline-dark">Cancelar</button>
+        </div>
+    </div>
 </form>
