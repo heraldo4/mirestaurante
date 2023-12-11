@@ -24,7 +24,7 @@ function cargarTabla(){
                   <td scope="col" class="d-flex justify-content-center">
                   <button class="me-3 btn btn-outline-secondary"><i class="fa-regular fa-pen-to-square"></i></button>
                   <button class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></button>
-                  </td>>
+                  </td>
               </tr>
               
               `
