@@ -195,6 +195,16 @@ h2 {
   margin-top: 50px;
 }
 
+.btn-outline-secondary {
+  background-color: var(--alfa);
+  color: #fff; 
+  transition: background-color 0.3s ease; 
+}
+
+.btn-outline-secondary:hover {
+  background-color: #a1b8b2; 
+}
+
 
 
 
