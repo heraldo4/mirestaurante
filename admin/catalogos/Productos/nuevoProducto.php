@@ -1,23 +1,23 @@
-<!-- Para enviar archivos es obligatorio el method="POST" y el enctype="multipart/form-data"-->
-<form id="frmProductos" class="w-40 m-auto mx-3 my-3" action="" method="GET" enctype="multipart/form-data">
+<form id="frmUsuario" class="w-40 m-auto mx-3 my-3" action="" method="GET" enctype="multipart/form-data">
     <input type="hidden" id="id" name="id">
     <div class="container">
         <div class="p-3 bd-highlight">
             <a href="index.php?page=productos" class="btn btn-secondary btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</a>
         </div>
 
-        <div class="container">
-            <div>
-                <h2>Catálogo Menu</h2>
-            </div>
+        <div class="text-center mb-4">
+            <h2>Catálogo Menú</h2>
+        </div>
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="nombre" id="nombre" placeholder="nombre">
                 <label for="nombre">Nombre</label>
             </div>
+        </div>
 
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="costo" id="costo" placeholder="costo">
+        <div class="mb-3">
+            <div class="form-floating">
+                <input type="text" class="form-control" name="costo" id="costo" placeholder="Costo">
                 <label for="costo">Costo</label>
             </div>
 
@@ -25,6 +25,7 @@
                 <input type="text" class="form-control" name="tipo" id="tipo" placeholder="tipo">
                 <label for="tipo">Tipo</label>
             </div>
+        </div>
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="duracion" id="duracion" placeholder="duracion">

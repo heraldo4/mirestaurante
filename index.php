@@ -48,7 +48,7 @@
             </button>
         </div>
         <div class="col-md-12 text-center mt-3">
-            <button class="btn btn-primary boton-ver-menu" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">Ver Menú</button>
+            <button class="btn btn-primary boton-ver-menu" type="button" onclick="window.location.href='Productos.php';" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">Ver Menú</button>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

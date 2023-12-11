@@ -3,7 +3,7 @@
     <input type="hidden" id="id" name="id">
     <div class="container">
         <div class="p-3 bd-highlight">
-            <a href="index.php?page=usuario" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Regresar</a>
+            <a href="index.php?page=usuario" class="btn btn-secondary btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</a>
         </div>
 
         <div class="container">
