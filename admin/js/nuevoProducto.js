@@ -1,14 +1,16 @@
-if(sessionStorage.getItem("id")!=null){
-  var id=parseInt(sessionStorage.getItem("id"));
-  document.querySelector("#id").value=sessionStorage.getItem("id");
-  document.querySelector("#nombre").value=sessionStorage.getItem("nombre");
-  document.querySelector("#tipo").value=sessionStorage.getItem("tipo");
-  document.querySelector("#costo").value=sessionStorage.getItem("costo");
-  document.querySelector("#duracion").value=sessionStorage.getItem("duracion");
-  sessionStorage.clear()
-}else{
-  id=-1
+if (sessionStorage.getItem("id") != null) {
+  var id = parseInt(sessionStorage.getItem("id"));
+  document.querySelector("#id").value = sessionStorage.getItem("id");
+  document.querySelector("#nombre").value = sessionStorage.getItem("nombre");
+  document.querySelector("#tipo").value = sessionStorage.getItem("tipo");
+  document.querySelector("#costo").value = sessionStorage.getItem("costo");
+  document.querySelector("#duracion").value = sessionStorage.getItem("duracion");
+
+  sessionStorage.clear();
+} else {
+  id = -1;
 }
+
 
 document.querySelector("#guardar").onclick = () => {
   //alert("clic")

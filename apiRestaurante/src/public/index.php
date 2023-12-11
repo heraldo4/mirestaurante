@@ -64,7 +64,7 @@ $app->get('/getplatillos/{id}', function (Request $request, Response $response, 
     $sql = "SELECT * FROM tplatillos WHERE id=$id";
     $res = $db->GetAll($sql);
     $response->getBody()->write(json_encode($res));
-    return $response;
+    return $response; 
 });
 
 //consultas del platillo por nombre

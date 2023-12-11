@@ -10,6 +10,8 @@
                     <th scope="col">Costo</th>
                     <th scope="col">Tipo</th>
                     <th scope="col">Duración</th>
+                    <th scope="col"></th>
+                    <th scope="col">Imagen</th>
                 </tr>
                 <div>
                     <a href="index.php?page=nuevoProducto" class="btn btn-secondary btn-nuevo"><i class="fas fa-plus"></i> Nuevo</a>
