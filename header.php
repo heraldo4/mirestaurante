@@ -8,6 +8,9 @@ if (!isset($_SESSION)) {
 
 // Verifica si el usuario es un administrador (si ha iniciado sesión)
 $is_admin = isset($_SESSION['rol']) && $_SESSION['rol'] === 'admin';
+// Verifica si el usuario ha iniciado sesión
+$sesionIniciada = isset($_SESSION['usuario']);
+
 
 ?>
 
@@ -41,7 +44,7 @@ $is_admin = isset($_SESSION['rol']) && $_SESSION['rol'] === 'admin';
 
     <script src="https://kit.fontawesome.com/f360adb569.js" crossorigin="anonymous"></script>
 
-    
+
 </head>
 
 <body>
@@ -83,16 +86,22 @@ $is_admin = isset($_SESSION['rol']) && $_SESSION['rol'] === 'admin';
                                     <i class="fa-solid fa-magnifying-glass fa-bounce fa-xs"></i>
                                 </button>
                             </div>
-                            <button class="btn btn-inicio" type="button" onclick="window.location.href='InicioSesion.php';">Iniciar <i class="fa-solid fa-user fa-xs"></i></button>
-                            <button class="btn btn-registrarse" type="button" onclick="window.location.href='Registro.php';">Registro <i class="fa-solid fa-registered fa-xs"></i></button>
-                        </form>
-                        <?php if (isset($_SESSION['rol']) && $is_admin) : ?>
-                            <li class="nav-item">
-                                <a href="/mirestaurante/admin/" class="nav-link">
-                                    <i class="fas fa-user-shield fa-lg" onclick="window.location.href='/mirestaurante/admin/'"></i>
-                                </a>
-                            </li>
-                        <?php endif; ?>
+                            <?php if ($sesionIniciada) : ?>
+                                <!-- Si la sesión está iniciada, muestra el botón de cerrar sesión -->
+                                <button class="btn btn-cerrar-sesion" type="button" onclick="window.location.href='/mirestaurante/cerrar_sesion.php';">Cerrar Sesión <i class="fa-solid fa-user-slash fa-xs"></i></button>
+                            <?php else : ?>
+                                <!-- Si la sesión no está iniciada, muestra los botones de Iniciar Sesión y Registro -->
+                                <button class="btn btn-inicio" type="button" onclick="window.location.href='InicioSesion.php';">Iniciar <i class="fa-solid fa-user fa-xs"></i></button>
+                                <button class="btn btn-registrarse" type="button" onclick="window.location.href='Registro.php';">Registro <i class="fa-solid fa-registered fa-xs"></i></button>
+                            <?php endif; ?>
+
+                            <?php if (isset($_SESSION['rol']) && $is_admin) : ?>
+                                <li class="nav-item">
+                                    <a href="/mirestaurante/admin/" class="nav-link">
+                                        <i class="fas fa-user-shield fa-lg" onclick="window.location.href='/mirestaurante/admin/'"></i>
+                                    </a>
+                                </li>
+                            <?php endif; ?>
 
                     </ul>
                 </div>
