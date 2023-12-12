@@ -87,22 +87,38 @@ $sesionIniciada = isset($_SESSION['usuario']);
                                 </button>
                             </div>
                             <?php if ($sesionIniciada) : ?>
-                                <!-- Si la sesión está iniciada, muestra el botón de cerrar sesión -->
-                                <button class="btn btn-cerrar-sesion" type="button" onclick="window.location.href='/mirestaurante/cerrar_sesion.php';">Cerrar Sesión <i class="fa-solid fa-user-slash fa-xs"></i></button>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-user fa-xs"></i> <?php echo $_SESSION['usuario']; ?>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <?php if ($is_admin) : ?>
+                                            <!-- Si es un admin, muestra el enlace al dashboard -->
+                                            <li><a class="dropdown-item" href="/mirestaurante/admin/">Dashboard</a></li>
+                                        <?php else : ?>
+                                            <!-- Si es un usuario normal, muestra el enlace al carrito y a la información personal -->
+                                            <li><a class="dropdown-item" href="/mirestaurante/carrito.php">Carrito</a></li>
+                                            <li><a class="dropdown-item" href="/mirestaurante/informacionPersonal.php">Información Personal</a></li>
+                                        <?php endif; ?>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="/mirestaurante/cerrarSesion.php">Cerrar Sesión</a></li>
+                                    </ul>
+                                </li>
                             <?php else : ?>
-                                <!-- Si la sesión no está iniciada, muestra los botones de Iniciar Sesión y Registro -->
                                 <button class="btn btn-inicio" type="button" onclick="window.location.href='InicioSesion.php';">Iniciar <i class="fa-solid fa-user fa-xs"></i></button>
                                 <button class="btn btn-registrarse" type="button" onclick="window.location.href='Registro.php';">Registro <i class="fa-solid fa-registered fa-xs"></i></button>
                             <?php endif; ?>
 
-                            <?php if (isset($_SESSION['rol']) && $is_admin) : ?>
+                            <!-- <?php if (isset($_SESSION['rol']) && $is_admin) : ?>
                                 <li class="nav-item">
                                     <a href="/mirestaurante/admin/" class="nav-link">
                                         <i class="fas fa-user-shield fa-lg" onclick="window.location.href='/mirestaurante/admin/'"></i>
                                     </a>
                                 </li>
-                            <?php endif; ?>
-
+                            <?php endif; ?> -->
+                        </form>
                     </ul>
                 </div>
             </div>
