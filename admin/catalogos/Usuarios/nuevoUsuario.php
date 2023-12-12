@@ -32,6 +32,11 @@
             </div>
 
             <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="gmail" id="telefono" placeholder="Telefono">
+                <label for="telefono">Telefono</label>
+            </div>
+
+            <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="rol" id="rol" placeholder="Rol">
                 <label for="rol">Rol</label>
             </div>

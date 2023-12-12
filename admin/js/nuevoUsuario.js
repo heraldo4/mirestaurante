@@ -5,6 +5,7 @@ if(sessionStorage.getItem("id")!=null){
     document.querySelector("#usuario").value=sessionStorage.getItem("usuario");
     document.querySelector("#contrasena").value=sessionStorage.getItem("contrasena");
     document.querySelector("#gmail").value=sessionStorage.getItem("gmail");
+    document.querySelector("#telefono").value=sessionStorage.getItem("telefono");
     document.querySelector("#rol").value=sessionStorage.getItem("rol");
     sessionStorage.clear()
   }else{

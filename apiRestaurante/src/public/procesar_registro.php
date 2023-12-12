@@ -7,6 +7,7 @@ $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
 $nombre_apellidos = $_POST['nombre_apellidos'];
 $correo_electronico = $_POST['correo_electronico'];
+$telefono = $_POST['telefono'];
 $contrasena = hash('sha512', $contrasena);
 
 // Verificación de que el usuario no se repita
@@ -34,7 +35,7 @@ if ($verificar_correo && $verificar_correo->RecordCount() > 0) {
 }
 
 // Inserción de datos
-$query = "INSERT INTO tusuarios(nombre, usuario, contrasena, gmail) VALUES('$nombre_apellidos', '$usuario', '$contrasena', '$correo_electronico')";
+$query = "INSERT INTO tusuarios(nombre, usuario, contrasena, gmail) VALUES('$nombre_apellidos', '$usuario', '$contrasena', '$correo_electronico', '$telefono')";
 $ejecutar = $db->Execute($query);
 
 if ($ejecutar) {

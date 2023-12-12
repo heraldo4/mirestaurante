@@ -10,6 +10,7 @@
                     <th scope="col">Usuario</th>
                     <th scope="col">Contraseña</th>
                     <th scope="col">Gmail</th>
+                    <th scope="col">Telefono</th>
                     <th scope="col">Rol</th>
                     <th scope="col"></th>
                     <th scope="col">Imagen</th>

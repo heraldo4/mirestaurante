@@ -20,7 +20,8 @@
                 <div class="col-md-6">
                     <div class="card-body">
                         <h2 class="card-title text-center mb-4">Registro de Usuarios</h2>
-                        <form action="apiRestaurante/src/public/procesar_registro.php" method="post">
+                        <form action="apiRestaurante/src/public/procesar_registro.php" method="post" enctype="multipart/form-data">
+                            <!-- Resto del formulario sigue igual -->
                             <div class="form-group">
                                 <label for="usuario">
                                     <i class="fas fa-user"></i> Usuario:
@@ -44,6 +45,20 @@
                                     <i class="fas fa-envelope"></i> Correo Electrónico:
                                 </label>
                                 <input type="email" class="form-control" id="correo_electronico" name="correo_electronico" required>
+                            </div>
+                            <!-- Número de Teléfono -->
+                            <div class="form-group">
+                                <label for="telefono">
+                                    <i class="fas fa-phone"></i> Teléfono:
+                                </label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                            </div>
+                            <!-- Carga de Imagen de Usuario -->
+                            <div class="form-group">
+                                <label for="imagen_usuario">
+                                    <i class="fas fa-image"></i> Imagen de Usuario:
+                                </label>
+                                <input type="file" class="form-control" id="imagen_usuario" name="imagen_usuario">
                             </div>
                             <div class="form-group">
                                 <label for="fecha_cumpleanos">
@@ -91,7 +106,7 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             //transición al cargar la página
             document.body.style.opacity = '1';
             //transición hacia abajo al cargar la página
@@ -101,12 +116,12 @@
             // Efecto de desvanecimiento en la imagen de fondo al hacer hover
             const backgroundImage = document.getElementById('backgroundImage');
             if (backgroundImage) {
-                backgroundImage.addEventListener('mouseenter', function () {
+                backgroundImage.addEventListener('mouseenter', function() {
                     this.style.transition = 'opacity 0.5s ease';
                     this.style.opacity = '0.7';
                 });
 
-                backgroundImage.addEventListener('mouseleave', function () {
+                backgroundImage.addEventListener('mouseleave', function() {
                     this.style.transition = 'opacity 0.5s ease';
                     this.style.opacity = '1';
                 });

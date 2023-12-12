@@ -17,6 +17,7 @@ function cargarTablaUsers() {
                     <td scope="col">${p.usuario}</td>
                     <td scope="col">${p.contrasena}</td>
                     <td scope="col">${p.gmail}</td>
+                    <td scope="col">${p.telefono}</td>
                     <td scope="col">${p.rol}</td>
                     <td scope="col" class="btn-users d-flex align-items-center">
                       <button class="me-3 btn btn-outline-secondary"><i class="fa-regular fa-pen-to-square"></i></button>
@@ -50,7 +51,8 @@ document.querySelector("#datosTablaUsuarios").addEventListener("click", (e) => {
       sessionStorage.setItem("usuario", e.target.closest("tr").childNodes[5].innerHTML)
       sessionStorage.setItem("contresena", e.target.closest("tr").childNodes[7].innerHTML)
       sessionStorage.setItem("gmail", e.target.closest("tr").childNodes[9].innerHTML)
-      sessionStorage.setItem("rol", e.target.closest("tr").childNodes[11].innerHTML)
+      sessionStorage.setItem("telefono", e.target.closest("tr").childNodes[11].innerHTML)
+      sessionStorage.setItem("rol", e.target.closest("tr").childNodes[13].innerHTML)
 
       location.href = "index.php?page=nuevoUsuario";
     }
