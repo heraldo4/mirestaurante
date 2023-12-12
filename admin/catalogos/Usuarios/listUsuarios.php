@@ -11,6 +11,8 @@
                     <th scope="col">Contraseña</th>
                     <th scope="col">Gmail</th>
                     <th scope="col">Rol</th>
+                    <th scope="col"></th>
+                    <th scope="col">Imagen</th>
 
                     <div>
                     <a href="index.php?page=nuevoUsuario" class="btn btn-secondary btn-nuevo"><i class="fas fa-plus"></i> Nuevo</a>
