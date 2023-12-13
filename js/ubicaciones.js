@@ -90,9 +90,9 @@ function initMap() {
             infowindows.forEach(iw => iw.close());
             infowindow.open(map, marker);
 
-            // Centrar el mapa en el marcador clicado
+            // Centrar el mapa en el marcador click
             map.setCenter(marker.getPosition());
-            map.setZoom(14);  // Puedes ajustar el valor del zoom según tus preferencias
+            map.setZoom(14);  
         });
     });
 }

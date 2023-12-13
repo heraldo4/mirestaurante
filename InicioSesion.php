@@ -41,13 +41,13 @@
     <script src="https://kit.fontawesome.com/f360adb569.js" crossorigin="anonymous"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Agregar transición suave al cargar la página
+            // transición suave al cargar la página
             document.body.style.opacity = '1';
-            // Agregar transición hacia abajo al cargar la página
+            // transición hacia abajo al cargar la página
             document.body.style.transform = 'translateY(0)';
             document.body.style.transition = 'transform 1s ease';
 
-            // Efecto de desvanecimiento en la imagen de fondo al hacer hover
+            // Efecto de desvanecimiento en la imagen 
             const backgroundImage = document.getElementById('backgroundImage');
             if (backgroundImage) {
                 backgroundImage.addEventListener('mouseenter', function () {

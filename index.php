@@ -7,14 +7,14 @@
             <p class="p1">Servimos deliciosos platos para llevar o entrega a domicilio.</p>
         </div>
         <div id="demo" class="carousel slide mx-auto" data-bs-ride="carousel" style="height: 600px; width: 1500px;">
-            <!-- Indicadores/dots -->
+            <!-- Indicadores -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
             </div>
 
-            <!-- The slideshow/carousel -->
+            <!-- carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="carousel-caption d-none d-md-block text-left">
