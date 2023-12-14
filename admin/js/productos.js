@@ -21,6 +21,7 @@ function cargarTabla(){
                   <td scope="col">${p.costo}</td>
                   <td scope="col">${p.tipo}</td>
                   <td scope="col">${p.duracion}m</td>
+                  <td scope="col">${p.imagen}m</td>
                   <td scope="col" class="d-flex justify-content-center">
                   <button class="me-3 btn btn-outline-secondary"><i class="fa-regular fa-pen-to-square"></i></button>
                   <button class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></button>
@@ -54,6 +55,7 @@ document.querySelector("#datosTabla").addEventListener("click", (e) => {
       sessionStorage.setItem("costo",e.target.closest("tr").childNodes[5].innerHTML)
       sessionStorage.setItem("tipo",e.target.closest("tr").childNodes[7].innerHTML)
       sessionStorage.setItem("duracion",e.target.closest("tr").childNodes[9].innerHTML)
+      sessionStorage.setItem("imagen",e.target.closest("tr").childNodes[11].innerHTML)
 
       location.href="index.php?page=nuevoProducto";
     }

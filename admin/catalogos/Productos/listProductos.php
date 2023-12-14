@@ -10,7 +10,6 @@
                     <th scope="col">Costo</th>
                     <th scope="col">Tipo</th>
                     <th scope="col">Duración</th>
-                    <th scope="col"></th>
                     <th scope="col">Imagen</th>
                 </tr>
                 <div>
