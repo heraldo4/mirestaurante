@@ -1,16 +1,18 @@
 <?php include "header.php" ?>
 
+
+
 <main class="container">
     <section class="mb-4">
         <!--Section heading-->
-        <div class="contact form-title" style="background-image: url('img/Contactenos/Vegetales.jpeg" );>
+        <div class="contact form-title" style="background-image: url('img/Contactenos/Vegetales.jpeg');">
             <h4 class="text-center my-4">Contactenos</h4>
         </div>
         <!--Section description-->
         <section class="row">
             <!-- Formulario -->
             
-            <form class="col-lg-6" action="/apiRestaurante/src/public/procesar_formulario.php" method="post">
+            <form class="col-lg-6" action="procesar_formulario.php" method="post">
                 <div class="form-floating mb-3">
                     <input type="text" class="contact form-control" name="nombre" id="nombre" placeholder="Digite su Nombre">
                     <label for="nombre">Nombre</label>
@@ -19,7 +21,7 @@
                 <div class="row mb-3">
                     <div class="col-lg-6">
                         <label class="form-floating mb-3" for="email"></label>
-                        <input type="email" class="contact form-control" name="email" id="email" placeholder="Correo electrónico">
+                        <input type="email" class="contact form-control" name="email" id="email" placeholder="Correo electronico">
                     </div>
                     <div class="col-lg-6">
                         <label class="form-floating mb-3" for="telefono"></label>
@@ -58,6 +60,14 @@
             </div>
         </section>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css" rel="stylesheet">
+
+<script src="../mirestaurante/js/formulario.js"></script>
+
+
 </main>
+
 
 <?php include "footer.php" ?>

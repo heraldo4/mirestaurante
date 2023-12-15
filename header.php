@@ -54,7 +54,7 @@ $sesionIniciada = isset($_SESSION['usuario']);
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.php">
-                        <img class="logo" src="img/logo.png" alt="GreenBite">
+                        <img class="logo" src="img/logo.jpg" alt="GreenBite">
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
