@@ -46,7 +46,7 @@ body {
 
 .card-body {
     padding: 20px;
-    background-color: gainsboro;
+    background-color: rgb(255, 255, 255);
 }
 
 .form-group {
@@ -62,7 +62,7 @@ label {
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
-    border: none;
+    border: #365956 solid 2px;
     border-radius: 4px;
 }
 
@@ -88,3 +88,25 @@ h2{
     color: var(--falcon);
     font-weight: bold;
 }
+
+.user-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.user-icon label {
+    color: var(--alfa); /* Color del icono blanco (#ffffff) */
+}
+
+.user-text {
+    text-align: center;
+    color: var(--falcon); /* Color del texto blanco (#ffffff) */
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+}
+
+
+

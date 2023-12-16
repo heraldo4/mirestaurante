@@ -23,6 +23,14 @@
                         <form action="apiRestaurante/src/public/procesar_registro.php" method="post" enctype="multipart/form-data">
                             <!-- Resto del formulario sigue igual -->
                             <div class="form-group">
+                                <div class="user-icon">
+                                    <label for="imagen_usuario" class="fa-solid fa-user-circle fa-5x"></label>  
+                                    <input type="file" class="form-control" id="imagen_usuario" name="imagen_usuario" style="display: none;">
+                                </div>
+                                <div class="user-text"><i>Profile Photo</i></div>
+                            </div>
+
+                            <div class="form-group">
                                 <label for="usuario">
                                     <i class="fas fa-user"></i> Usuario:
                                 </label>
@@ -54,12 +62,6 @@
                                 <input type="tel" class="form-control" id="telefono" name="telefono" required>
                             </div>
                             <!-- Carga de Imagen de Usuario -->
-                            <div class="form-group">
-                                <label for="imagen_usuario">
-                                    <i class="fas fa-image"></i> Imagen de Usuario:
-                                </label>
-                                <input type="file" class="form-control" id="imagen_usuario" name="imagen_usuario">
-                            </div>
                             <div class="form-group">
                                 <label for="fecha_cumpleanos">
                                     <i class="fas fa-calendar-alt"></i> Fecha de Cumpleaños:
