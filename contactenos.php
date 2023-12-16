@@ -1,17 +1,11 @@
 <?php include "header.php" ?>
 
-
-
 <main class="container">
     <section class="mb-4">
-        <!--Section heading-->
         <div class="contact form-title" style="background-image: url('img/Contactenos/Vegetales.jpeg');">
             <h4 class="text-center my-4">Contactenos</h4>
         </div>
-        <!--Section description-->
         <section class="row">
-            <!-- Formulario -->
-            
             <form class="col-lg-6" action="procesar_formulario.php" method="post">
                 <div class="form-floating mb-3">
                     <input type="text" class="contact form-control" name="nombre" id="nombre" placeholder="Digite su Nombre">
@@ -61,13 +55,46 @@
         </section>
     </section>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css" rel="stylesheet">
 
-<script src="../mirestaurante/js/formulario.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('form').submit(function (e) {
+                e.preventDefault();
 
-
+                $.ajax({
+                    type: 'POST',
+                    url: $(this).attr('action'),
+                    data: $(this).serialize(),
+                    dataType: 'json',
+                    success: function (response) {
+                        if (response.success) {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Éxito',
+                                text: response.message,
+                            });
+                        } else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Error',
+                                text: response.error,
+                            });
+                        }
+                    },
+                    error: function () {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error',
+                            text: 'Hubo un error en el servidor. Inténtalo de nuevo más tarde.',
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </main>
-
 
 <?php include "footer.php" ?>
