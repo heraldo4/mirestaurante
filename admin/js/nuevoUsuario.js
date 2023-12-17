@@ -15,6 +15,7 @@ if(sessionStorage.getItem("id")!=null){
   document.querySelector("#guardar").onclick = () => {
     //añadir parametros
     const datos = $("#frmUsuario").serialize()
+
     const accion=(id==-1) ? "insusuario" :"updusuario"
     const peticion=(id==-1) ? "post" :"put"
     peticionGuardar(accion,peticion,datos)

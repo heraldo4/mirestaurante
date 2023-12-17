@@ -49,7 +49,7 @@ document.querySelector("#datosTablaUsuarios").addEventListener("click", (e) => {
       sessionStorage.setItem("id", e.target.closest("tr").childNodes[1].innerHTML)
       sessionStorage.setItem("nombre", e.target.closest("tr").childNodes[3].innerHTML)
       sessionStorage.setItem("usuario", e.target.closest("tr").childNodes[5].innerHTML)
-      sessionStorage.setItem("contresena", e.target.closest("tr").childNodes[7].innerHTML)
+      sessionStorage.setItem("contrasena", e.target.closest("tr").childNodes[7].innerHTML)
       sessionStorage.setItem("gmail", e.target.closest("tr").childNodes[9].innerHTML)
       sessionStorage.setItem("telefono", e.target.closest("tr").childNodes[11].innerHTML)
       sessionStorage.setItem("rol", e.target.closest("tr").childNodes[13].innerHTML)

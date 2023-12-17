@@ -32,7 +32,7 @@
             </div>
 
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="gmail" id="telefono" placeholder="Telefono">
+                <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Telefono">
                 <label for="telefono">Telefono</label>
             </div>
 
@@ -41,12 +41,12 @@
                 <label for="rol">Rol</label>
             </div>
 
-            <div class="mb-3">
+            <!-- <div class="mb-3">
                 <div>
                     <label for="imagen">Imagen</label>
                     <input type="file" class="form-control" name="imagen" id="imagen" accept="image/*">
                 </div>
-            </div>
+            </div> -->
 
             <div class="mb-3">
                 <button id="guardar" type="button" class="btn btn-outline-dark">Guardar</button>
