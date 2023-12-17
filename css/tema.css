@@ -98,7 +98,6 @@ footer a:hover{
 }
 
 .btn-buscar {
-    width: 25%;
     border: none;
     background-color: var(--delta);
     color: var(--bravo);
@@ -173,4 +172,6 @@ footer a:hover{
     width: 100%;
     visibility: visible;
 }
+
+
 

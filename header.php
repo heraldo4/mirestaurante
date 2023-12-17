@@ -87,11 +87,11 @@ $sesionIniciada = isset($_SESSION['usuario']);
                                 </button>
                             </div>
                             <?php if ($sesionIniciada) : ?>
-                                <li class="nav-item dropdown">
+                                <li class="nav-item dropdown justify-content-end">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-user fa-xs"></i> <?php echo $_SESSION['usuario']; ?>
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="max-height: 300px; overflow-y: auto; width: 159px; margin-left: -130px;"">
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="max-height: 300px; overflow-y: auto; width: 310px; margin-left: -200px;">
                                         <?php if ($is_admin) : ?>
                                             <!-- Si es un admin, muestra el enlace al dashboard -->
                                             <li><a class="dropdown-item" href="/mirestaurante/admin/">Dashboard</a></li>
