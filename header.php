@@ -3,7 +3,7 @@ $url = basename($_SERVER["PHP_SELF"]);
 $url = explode(".", $url);
 //var_dump($url[0])
 if (!isset($_SESSION)) {
-    session_start();
+
 }
 
 // Verifica si el usuario es un administrador (si ha iniciado sesión)
@@ -13,6 +13,35 @@ $sesionIniciada = isset($_SESSION['usuario']);
 
 
 ?>
+
+
+<?php
+// Iniciar la sesión si aún no se ha iniciado
+if (!isset($_SESSION)) {
+    session_start();
+}
+
+// Inicializar el carrito si aún no existe
+if (isset($_SESSION['carrito']) && is_array($_SESSION['carrito'])) {
+    $productosEnCarrito = $_SESSION['carrito'];
+}
+
+// Función para agregar un producto al carrito
+function agregarAlCarrito($nombreProducto, $precioProducto) {
+    // Estructura de datos del producto
+    $producto = array(
+        'nombre' => $nombreProducto,
+        'precio' => $precioProducto
+    );
+
+    $_SESSION['carrito'][] = $producto;
+}
+?>
+
+
+
+
+
 
 <!doctype html>
 <html class="no-js" lang="">
@@ -40,6 +69,27 @@ $sesionIniciada = isset($_SESSION['usuario']);
     <link rel="stylesheet" href="css/<?php echo $url[0] ?>.css">
 
     <!-- Latest compiled JavaScript -->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.btn-primary').on('click', function() {
+                var nombreProducto = $(this).closest('.card-body').find('.card-title').text();
+                var precioProducto = $(this).closest('.card-body').find('.precio span').text();
+                $.ajax({
+                    type: 'POST',
+                    url: 'agregar_al_carrito.php',
+                    data: { nombre: nombreProducto, precio: precioProducto },
+                    success: function(response) {
+                        alert('Producto agregado al carrito');
+                },
+                error: function(error) {
+                    console.error('Error al agregar el producto al carrito');
+                    }
+                });
+            });
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://kit.fontawesome.com/f360adb569.js" crossorigin="anonymous"></script>
@@ -76,6 +126,9 @@ $sesionIniciada = isset($_SESSION['usuario']);
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?php if ($url[0] == "contactenos") echo "active" ?>" aria-current="page" href="contactenos.php">Contáctenos</a>
+                        </li>    
+                        <li class="nav-item">
+                            <a class="nav-link <?php if ($url[0] == "carrito") echo "active" ?>" aria-current="page" href="carrito.php">Carrito</a>
                     </ul>
                     <ul class="nav navbar-nav justify-content-center">
                         <form id="frmBusqueda" action="resultados.php" class="d-flex" role="search">
@@ -87,11 +140,11 @@ $sesionIniciada = isset($_SESSION['usuario']);
                                 </button>
                             </div>
                             <?php if ($sesionIniciada) : ?>
-                                <li class="nav-item dropdown justify-content-end">
+                                <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-user fa-xs"></i> <?php echo $_SESSION['usuario']; ?>
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="max-height: 300px; overflow-y: auto; width: 310px; margin-left: -200px;">
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="max-height: 300px; overflow-y: auto; width: 159px; margin-left: -130px;"">
                                         <?php if ($is_admin) : ?>
                                             <!-- Si es un admin, muestra el enlace al dashboard -->
                                             <li><a class="dropdown-item" href="/mirestaurante/admin/">Dashboard</a></li>

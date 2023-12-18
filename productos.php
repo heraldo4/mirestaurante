@@ -23,7 +23,7 @@
                                 <span>₡5,000</span>
                             </div>
                             <div class="cta">
-                                <button class="btn btn-primary">Pedir ahora</button>
+                                <button class="btn btn-primary" onclick="agregarAlCarrito('Ensalada de Aguacate y Anacardos', 5000)">Pedir ahora</button>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                                 <span>₡7,500</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button>
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Rolllitos de Alga Nori con Salmon', 7500)">Pedir ahora </button>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                                 <span>₡6,000</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button> 
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Sopa de Calabaza Asada', 6000)">Pedir ahora </button> 
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
                                 <span>₡9,500</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button> 
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Pasta de Calabacín con Pesto de Albahaca', 9500)">Pedir ahora </button> 
                             </div>
                         </div>
                     </div>
@@ -107,7 +107,7 @@
                                 <span>₡12,000</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button> 
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Pollo a la Barbacoa con Batata Asada', 12000)">Pedir ahora </button> 
                             </div>
                         </div>
                     </div>
@@ -125,7 +125,7 @@
                                 <span>₡14,500</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button>
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Salmón a la Parrilla con Salsa de Limón', 14500)">Pedir ahora </button>
                             </div>
                         </div>
                     </div>
@@ -144,7 +144,7 @@
                                 <span>₡10,800</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button>
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Tofu Salteado con Vegetales', 10800)">Pedir ahora </button>
                             </div>
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                                 <span>₡8,000</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button>
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Berejenas al Horno', 8000)">Pedir ahora </button>
                             </div>
                         </div>
                     </div>
@@ -188,7 +188,7 @@
                                 <span>₡9,500</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button>
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Pure de Coliflor y Brocol', 9500)">Pedir ahora </button>
                             </div>
                         </div>
                     </div>
@@ -206,7 +206,7 @@
                                 <span>₡10,200</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button>
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Ensalada de Lentejas y Kale', 10200)">Pedir ahora </button>
                             </div>
                         </div>
                     </div>
@@ -232,7 +232,7 @@
                                 <span>₡7,800</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button>
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Chia Pudding con Frutos Rojos', 7800)">Pedir ahora </button>
                             </div>
                         </div>
                     </div>
@@ -250,7 +250,7 @@
                                 <span> ₡11,000</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button>
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Tarta de Manzana sin Azucar', 11000)">Pedir ahora </button>
                             </div>
                         </div>
                     </div>
@@ -268,7 +268,7 @@
                                 <span>₡6,500</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button>
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Yogur Griego Natural con Frutas', 6500)">Pedir ahora </button>
                             </div>
                         </div>
                     </div>
@@ -294,7 +294,7 @@
                                 <span>₡2,500</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button>
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Agua Infundida', 2500)">Pedir ahora </button>
                             </div>
                         </div>
                     </div>
@@ -312,7 +312,7 @@
                                 <span>₡1,000</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button>
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Agua', 1000)">Pedir ahora </button>
                             </div>
                         </div>
                     </div>
@@ -330,7 +330,7 @@
                                 <span>₡4,500</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button>
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Té Verde Frío con Menta y Limón', 4500)">Pedir ahora </button>
                             </div>
                         </div>
                     </div>
@@ -348,7 +348,7 @@
                                 <span>₡8,800</span>
                             </div>
                             <div class="cta">
-                            <button href="#" class="btn btn-primary">Pedir ahora </button>
+                            <button href="#" class="btn btn-primary" onclick="agregarAlCarrito('Batido de Proteínas con Espinacas y Plátano', 8800)">Pedir ahora </button>
                             </div>
                         </div>
                     </div>
