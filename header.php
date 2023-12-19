@@ -1,19 +1,13 @@
 <?php
+session_start(); // Start the session at the beginning of your code
 $url = basename($_SERVER["PHP_SELF"]);
 $url = explode(".", $url);
-//var_dump($url[0])
-if (!isset($_SESSION)) {
-
-}
 
 // Verifica si el usuario es un administrador (si ha iniciado sesión)
 $is_admin = isset($_SESSION['rol']) && $_SESSION['rol'] === 'admin';
 // Verifica si el usuario ha iniciado sesión
 $sesionIniciada = isset($_SESSION['usuario']);
-
-
 ?>
-
 
 <?php
 // Iniciar la sesión si aún no se ha iniciado
@@ -37,11 +31,6 @@ function agregarAlCarrito($nombreProducto, $precioProducto) {
     $_SESSION['carrito'][] = $producto;
 }
 ?>
-
-
-
-
-
 
 <!doctype html>
 <html class="no-js" lang="">
@@ -127,8 +116,8 @@ function agregarAlCarrito($nombreProducto, $precioProducto) {
                         <li class="nav-item">
                             <a class="nav-link <?php if ($url[0] == "contactenos") echo "active" ?>" aria-current="page" href="contactenos.php">Contáctenos</a>
                         </li>    
-                        <li class="nav-item">
-                            <a class="nav-link <?php if ($url[0] == "carrito") echo "active" ?>" aria-current="page" href="carrito.php">Carrito</a>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link <?php if ($url[0] == "carrito") echo "active" ?>" aria-current="page" href="carrito.php">Carrito</a> -->
                     </ul>
                     <ul class="nav navbar-nav justify-content-center">
                         <form id="frmBusqueda" action="resultados.php" class="d-flex" role="search">
@@ -140,11 +129,11 @@ function agregarAlCarrito($nombreProducto, $precioProducto) {
                                 </button>
                             </div>
                             <?php if ($sesionIniciada) : ?>
-                                <li class="nav-item dropdown">
+                                <li class="nav-item dropdown justify-content-end">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-user fa-xs"></i> <?php echo $_SESSION['usuario']; ?>
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="max-height: 300px; overflow-y: auto; width: 159px; margin-left: -130px;"">
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="max-height: 300px; overflow-y: auto; width: 310px; margin-left: -200px;">
                                         <?php if ($is_admin) : ?>
                                             <!-- Si es un admin, muestra el enlace al dashboard -->
                                             <li><a class="dropdown-item" href="/mirestaurante/admin/">Dashboard</a></li>
@@ -163,14 +152,6 @@ function agregarAlCarrito($nombreProducto, $precioProducto) {
                                 <button class="btn btn-inicio" type="button" onclick="window.location.href='InicioSesion.php';">Iniciar <i class="fa-solid fa-user fa-xs"></i></button>
                                 <button class="btn btn-registrarse" type="button" onclick="window.location.href='Registro.php';">Registro <i class="fa-solid fa-registered fa-xs"></i></button>
                             <?php endif; ?>
-
-                            <!-- <?php if (isset($_SESSION['rol']) && $is_admin) : ?>
-                                <li class="nav-item">
-                                    <a href="/mirestaurante/admin/" class="nav-link">
-                                        <i class="fas fa-user-shield fa-lg" onclick="window.location.href='/mirestaurante/admin/'"></i>
-                                    </a>
-                                </li>
-                            <?php endif; ?> -->
                         </form>
                     </ul>
                 </div>
