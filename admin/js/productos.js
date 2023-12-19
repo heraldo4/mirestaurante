@@ -21,7 +21,7 @@ function cargarTabla(){
                   <td scope="col">${p.costo}</td>
                   <td scope="col">${p.tipo}</td>
                   <td scope="col">${p.duracion}m</td>
-                  <td scope="col">${p.imagen}m</td>
+                  <td scope="col">${p.imagen}</td>
                   <td scope="col" class="d-flex justify-content-center">
                   <button class="me-3 btn btn-outline-secondary"><i class="fa-regular fa-pen-to-square"></i></button>
                   <button class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></button>
