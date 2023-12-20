@@ -99,13 +99,13 @@ h2{
 }
 
 .user-icon label {
-    color: var(--alfa); /* Color del icono blanco (#ffffff) */
+    color: var(--alfa); 
 }
 
 .user-text {
     text-align: center;
-    color: var(--falcon); /* Color del texto blanco (#ffffff) */
-    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+    color: var(--falcon); 
+    margin-top: 10px; 
 }
 
 

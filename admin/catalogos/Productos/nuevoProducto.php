@@ -1,4 +1,4 @@
-<form id="frmProducto" class="w-40 m-auto mx-3 my-3" action="" method="POST" enctype="multipart/form-data">
+<form id="frmProductos" class="w-40 m-auto mx-3 my-3" action="" method="POST" enctype="multipart/form-data">
     <input type="hidden" id="id" name="id">
     <div class="container">
         <div class="p-3 bd-highlight">
@@ -37,10 +37,21 @@
             </div>
         </div>
 
-        <div class="mb-3">
+        <!-- <div class="mb-3">
             <label for="imagen">Imagen</label>
             <input type="file" class="form-control" name="imagen" id="imagen" accept="image/*">
-        </div>
+        </div> -->
+        
+        <!-- CAMBIOS PARA IMAGEN -->
+        <!-- <div class="mb-3">
+            <?php if (isset($_GET['error'])) : ?>
+                <div class="alert alert-danger" role="alert">
+                    <?php echo $_GET['error']; ?>
+                </div>
+            <?php endif ?>
+        </div> -->
+        <!-- CAMBIOS PARA IMAGEN -->
+
 
         <div class="mb-3 text-center">
             <button id="guardar" type="button" class="btn btn-outline-dark">Guardar</button>

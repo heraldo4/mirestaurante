@@ -21,7 +21,8 @@ if (isset($_SESSION['carrito']) && is_array($_SESSION['carrito'])) {
 }
 
 // Función para agregar un producto al carrito
-function agregarAlCarrito($nombreProducto, $precioProducto) {
+function agregarAlCarrito($nombreProducto, $precioProducto)
+{
     // Estructura de datos del producto
     $producto = array(
         'nombre' => $nombreProducto,
@@ -55,6 +56,8 @@ function agregarAlCarrito($nombreProducto, $precioProducto) {
 
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/<?php echo $url[0] ?>.css">
 
     <!-- Latest compiled JavaScript -->
@@ -68,12 +71,27 @@ function agregarAlCarrito($nombreProducto, $precioProducto) {
                 $.ajax({
                     type: 'POST',
                     url: 'agregar_al_carrito.php',
-                    data: { nombre: nombreProducto, precio: precioProducto },
+                    data: {
+                        nombre: nombreProducto,
+                        precio: precioProducto
+                    },
                     success: function(response) {
-                        alert('Producto agregado al carrito');
-                },
-                error: function(error) {
-                    console.error('Error al agregar el producto al carrito');
+                        // Reemplazar la alerta con SweetAlert
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Producto agregado al carrito',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                    },
+                    error: function(error) {
+                        // Reemplazar la alerta de error con SweetAlert
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error al agregar el producto al carrito',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
                     }
                 });
             });
@@ -115,7 +133,7 @@ function agregarAlCarrito($nombreProducto, $precioProducto) {
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?php if ($url[0] == "contactenos") echo "active" ?>" aria-current="page" href="contactenos.php">Contáctenos</a>
-                        </li>    
+                        </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link <?php if ($url[0] == "carrito") echo "active" ?>" aria-current="page" href="carrito.php">Carrito</a> -->
                     </ul>
@@ -135,10 +153,10 @@ function agregarAlCarrito($nombreProducto, $precioProducto) {
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="max-height: 300px; overflow-y: auto; width: 310px; margin-left: -200px;">
                                         <?php if ($is_admin) : ?>
-                                            <!-- Si es un admin, muestra el enlace al dashboard -->
+                                            <!-- si es un admin muestra el enlace al dashboard -->
                                             <li><a class="dropdown-item" href="/mirestaurante/admin/">Dashboard</a></li>
                                         <?php else : ?>
-                                            <!-- Si es un usuario normal, muestra el enlace al carrito y a la información personal -->
+                                            <!-- si es un usuario normal muestra el enlace al carrito y a la información personal -->
                                             <li><a class="dropdown-item" href="/mirestaurante/carrito.php">Carrito</a></li>
                                             <li><a class="dropdown-item" href="/mirestaurante/informacionPersonal.php">Información Personal</a></li>
                                         <?php endif; ?>

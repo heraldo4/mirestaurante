@@ -6,19 +6,19 @@
     width: 100%;
 }
 
-/* Estilo para el contenedor de información debajo del mapa */
+/* información debajo del mapa */
 .info-container {
     display: flex;
     flex-direction: column;
 }
 
-/* Estilo para cada fila de información */
+/* información */
 .info-row {
     display: flex;
 
 }
 
-/* Estilo para cada cuadro de información */
+/* cuadro de información */
 .info-box {
     width: 50%;
     padding: 10px;
@@ -35,7 +35,7 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Estilo para la imagen en cada cuadro de información */
+/* imagen en cada cuadro de información */
 .info-image {
     width: 150px;
     height: auto;
@@ -46,12 +46,11 @@
     opacity: 0.5;
 }
 
-/* Estilo para los detalles en cada cuadro de información */
+/* detalles en cada cuadro de información */
 .info-details {
     flex-grow: 1;
 }
 
-/* Ajustes de estilo adicionales según sea necesario */
 .container{
     margin-top: 50px;
 }

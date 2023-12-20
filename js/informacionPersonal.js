@@ -7,7 +7,7 @@ $(document).ready(function () {
             url: "http://localhost/mirestaurante/apirestaurante/src/public/getusuario",  
             dataType: "JSON",
             beforeSend: function () {
-                // lógica de carga 
+                
             },
             success: function (res) {
                 $("#nombre").val(res.nombre);
@@ -20,7 +20,7 @@ $(document).ready(function () {
                 console.log(xhr.statusText + xhr.responseText);
             },
             complete: function () {
-                // lógica después de completar la solicitud 
+                
             }
         });
     }
@@ -44,7 +44,7 @@ $(document).ready(function () {
             data: formData,
             dataType: "JSON",
             beforeSend: function () {
-                //lógica de carga 
+                
             },
             success: function (res) {
                 if (res.success) {
@@ -58,7 +58,7 @@ $(document).ready(function () {
                 console.log(xhr.statusText + xhr.responseText);
             },
             complete: function () {
-                //lógica después de completar la solicitud
+                
             }
         });
     }

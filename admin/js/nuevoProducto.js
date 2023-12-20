@@ -5,7 +5,7 @@ if (sessionStorage.getItem("id") != null) {
   document.querySelector("#tipo").value = sessionStorage.getItem("tipo");
   document.querySelector("#costo").value = sessionStorage.getItem("costo");
   document.querySelector("#duracion").value = sessionStorage.getItem("duracion");
-  document.querySelector("#imagen").value = sessionStorage.getItem("imagen");
+  // document.querySelector("#imagen").value = sessionStorage.getItem("imagen");
 
   sessionStorage.clear();
 } else {

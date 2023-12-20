@@ -7,14 +7,12 @@
             <p class="p1">Servimos deliciosos platos para llevar o entrega a domicilio.</p>
         </div>
         <div id="demo" class="carousel slide mx-auto" data-bs-ride="carousel" style="height: 600px; width: 1500px;">
-            <!-- Indicadores -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
             </div>
 
-            <!-- carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="carousel-caption d-none d-md-block text-left">
@@ -38,8 +36,6 @@
                     <img src="img/Portada/Portada3.jpg" alt="New York" class="d-block w-100" style="object-fit: cover; height: 100%;">
                 </div>
             </div>
-
-            <!-- Left and right controls/icons -->
             <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
@@ -54,9 +50,9 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
         $(document).ready(function() {
-            // Al cambiar de diapositiva
+            //cambiar de diapositiva
             $('#demo').on('slide.bs.carousel', function() {
-                // Oculta los elementos en la diapositiva actual
+                // diapositiva actual
                 $('.carousel-item.active .carousel-caption h5, .carousel-item.active .carousel-caption .p2')
                     .removeClass('carousel-caption-visible')
                     .addClass('carousel-caption-hidden');
@@ -64,7 +60,7 @@
 
             // Cuando la animación de cambio de diapositiva ha terminado
             $('#demo').on('slid.bs.carousel', function() {
-                // Muestra los elementos en la nueva diapositiva
+                //nueva diapositiva
                 $('.carousel-item.active .carousel-caption h5, .carousel-item.active .carousel-caption .p2')
                     .removeClass('carousel-caption-hidden')
                     .addClass('carousel-caption-visible');
@@ -73,10 +69,10 @@
     </script>
 
     <div class="row">
-        <!-- Carrusel de Testimonios -->
+        <!-- testimonios -->
         <div class="carousel-test col-md-12 text-center mt-5">
             <div id="testimonials-carousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="height: 400px; width: 100%; background-image: url('img/Testimonios/background.jpg');  background-size: cover; background-position: center;">
-                <!-- The slideshow/carousel -->
+                <!-- carousel -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-caption d-none d-md-block text-center">
@@ -101,8 +97,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Left and right controls/icons -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>

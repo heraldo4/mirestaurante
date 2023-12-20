@@ -2,7 +2,6 @@
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-
 <main class="container-fluid">
     <h1>Este es tu carrito</h1>
 </main>
@@ -14,6 +13,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
+
+    <script>
+        function eliminarProducto(nombreProducto) {
+            $.ajax({
+                type: 'POST',
+                url: 'eliminarProducto.php',
+                data: {
+                    nombreProducto: nombreProducto
+                },
+                success: function(response) {
+                    // eliminar el producto
+                    if (response === 'success') {
+                        // recargar la página si la eliminación fue exitosa
+                        location.reload();
+                    } else {
+                        alert('Error al eliminar el producto');
+                    }
+                },
+                error: function(error) {
+                    console.error('Error al eliminar el producto:', error);
+                }
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -25,7 +48,7 @@
             <tr>
                 <th>Producto</th>
                 <th>Precio Unitario</th>
-                <!-- <th>Cantidad</th> -->
+
                 <th>Total</th>
                 <th>Acciones</th>
             </tr>
@@ -39,30 +62,22 @@
                 $nombreProducto = $producto['nombre'];
                 $precioProducto = $producto['precio'];
 
-                // Inicializar $totalPorProducto antes del bucle
-                $totalPorProducto = 0;
-
-                // Verificar si el precio del producto es numérico
+                // es numérico
                 if (is_numeric($precioProducto)) {
-                    // Calcular el total por producto
-                    $totalPorProducto = $precioProducto;
-
-                    // Sumar al total del carrito
-                    $totalCarrito += $totalPorProducto;
-                }
             ?>
-                <tr>
-                    <td><?php echo $nombreProducto; ?></td>
-                    <td><?php echo '₡' . number_format(floatval($precioProducto), 2); ?></td>
-                    <!-- <td id="cantidad-<?php echo $nombreProducto; ?>"><?php echo $cantidadProducto; ?></td> -->
-                    <td id="total-<?php echo $nombreProducto; ?>"><?php echo '₡' . number_format(floatval($totalPorProducto), 2); ?></td>
-                    <td>
-                        <button onclick="aumentarCantidad('<?php echo $nombreProducto; ?>')">+</button>
-                        <button onclick="disminuirCantidad('<?php echo $nombreProducto; ?>')">-</button>
-                        <button onclick="eliminarProducto('<?php echo $nombreProducto; ?>')">Eliminar</button>
-                    </td>
-                </tr>
+                    <tr>
+                        <td><?php echo $nombreProducto; ?></td>
+                        <td id="precio-unitario-<?php echo $nombreProducto; ?>"><?php echo '₡' . number_format(floatval($precioProducto), 2); ?></td>
+
+                        <td id="total-<?php echo $nombreProducto; ?>"><?php echo '₡' . number_format(floatval($precioProducto), 2); ?></td>
+                        <td>
+                        <button type="button" class="btn btn-dark" onclick="eliminarProducto('<?php echo $nombreProducto; ?>')">Eliminar</button>
+                        </td>
+                    </tr>
             <?php
+                    // Sumar al total del carrito
+                    $totalCarrito += $precioProducto;
+                }
             }
             ?>
             <tr>
@@ -74,48 +89,7 @@
 
 </body>
 
-<script>
-    function aumentarCantidad(nombreProducto) {
-        actualizarCantidad(nombreProducto, 1);
-    }
 
-    function disminuirCantidad(nombreProducto) {
-        actualizarCantidad(nombreProducto, -1);
-    }
-
-    function eliminarProducto(nombreProducto) {
-        $.ajax({
-            type: 'POST',
-            url: 'eliminarProducto.php', // Nombre del archivo PHP que maneja la eliminación
-            data: { nombreProducto: nombreProducto },
-            success: function (response) {
-                // Actualizar la vista del carrito después de eliminar el producto
-                location.reload();
-            },
-            error: function (error) {
-                console.error('Error al eliminar el producto:', error);
-            }
-        });
-    }
-
-    function actualizarCantidad(nombreProducto, cantidad) {
-        $.ajax({
-            type: 'POST',
-            url: 'actualizarCantidad.php', // Nombre del archivo PHP que maneja la actualización
-            data: {
-                nombreProducto: nombreProducto,
-                cantidad: cantidad
-            },
-            success: function (response) {
-                // Actualizar la vista del carrito después de cambiar la cantidad
-                location.reload();
-            },
-            error: function (error) {
-                console.error('Error al actualizar la cantidad:', error);
-            }
-        });
-    }
-</script>
 
 
 </html>

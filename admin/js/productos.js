@@ -21,7 +21,7 @@ function cargarTabla(){
                   <td scope="col">${p.costo}</td>
                   <td scope="col">${p.tipo}</td>
                   <td scope="col">${p.duracion}m</td>
-                  <td scope="col">${p.imagen}</td>
+                  
                   <td scope="col" class="d-flex justify-content-center">
                   <button class="me-3 btn btn-outline-secondary"><i class="fa-regular fa-pen-to-square"></i></button>
                   <button class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></button>
@@ -42,6 +42,8 @@ function cargarTabla(){
     });
 }
 
+// <td scope="col"><img style="width: 150px;" src="../Subidas/${p.imagen}" alt=""></td>
+
 //crear eventos a nodos dinamicos
 //definir un eventlister al padre de los nodos dinamicos
 document.querySelector("#datosTabla").addEventListener("click", (e) => {
@@ -55,7 +57,7 @@ document.querySelector("#datosTabla").addEventListener("click", (e) => {
       sessionStorage.setItem("costo",e.target.closest("tr").childNodes[5].innerHTML)
       sessionStorage.setItem("tipo",e.target.closest("tr").childNodes[7].innerHTML)
       sessionStorage.setItem("duracion",e.target.closest("tr").childNodes[9].innerHTML)
-      sessionStorage.setItem("imagen",e.target.closest("tr").childNodes[11].innerHTML)
+      // sessionStorage.setItem("imagen",e.target.closest("tr").childNodes[11].innerHTML)
 
       location.href="index.php?page=nuevoProducto";
     }

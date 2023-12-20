@@ -36,7 +36,7 @@
       </section>
       <div class="copyright text-center p-3">
         © 2023 Copyright:
-        <a href="https://mdbootstrap.com/">Programación III</a>
+        <a href="https://uia.ac.cr/">Programación III</a>
       </div>
     </div>
   </footer>

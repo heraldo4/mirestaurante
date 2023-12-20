@@ -31,6 +31,8 @@ header .logo{
 }
 
 
+
+
 header ul li a {
     position: relative;
     margin:  10px;
@@ -154,9 +156,9 @@ footer a:hover{
     bottom: 0;
     left: 0;
     width: 0;
-    height: 3px; /* Puedes ajustar la altura según tus preferencias */
+    height: 3px; 
     background-color: var(--echo);
-    transition: width 0.3s; /* Agregamos transición para suavizar el cambio */
+    transition: width 0.3s; 
 }
 
 .nav-link:hover:after {
@@ -173,5 +175,21 @@ footer a:hover{
     visibility: visible;
 }
 
+.swal2-popup {
+    background-color: var(--echo); 
+    color: var(--falcon); 
+}
 
+.swal2-icon {
+    color: var(--alfa); 
+}
+
+.swal2-title {
+    background-color: var(--echo);
+    color: var(--falcon); 
+}
+
+.swal2-content {
+    color: #333; 
+}
 

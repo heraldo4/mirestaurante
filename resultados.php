@@ -1,6 +1,9 @@
 <?php include "header.php" ?>
 
-<h2 class="mb-4 text-center" id="noResultados"></h2>
-<main><section id="resultados" class="col-md-4"></section></main>
+<main class="d-flex justify-content-center" >
+  <section id="resultados" class="d-flex justify-content-center">
+    <h2 class="justify-content-evenly" id="noResultados" style="display: none;"></h2>
+  </section>
+</main>
 
 <?php include "footer.php" ?>

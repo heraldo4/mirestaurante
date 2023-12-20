@@ -21,7 +21,6 @@
                     <div class="card-body">
                         <h2 class="card-title text-center mb-4">Registro de Usuarios</h2>
                         <form action="apiRestaurante/src/public/procesar_registro.php" method="post" enctype="multipart/form-data">
-                            <!-- Resto del formulario sigue igual -->
                             <div class="form-group">
                                 <div class="user-icon">
                                     <label for="imagen_usuario" class="fa-solid fa-user-circle fa-5x"></label>  
@@ -54,14 +53,13 @@
                                 </label>
                                 <input type="email" class="form-control" id="correo_electronico" name="correo_electronico" required>
                             </div>
-                            <!-- Número de Teléfono -->
                             <div class="form-group">
                                 <label for="telefono">
                                     <i class="fas fa-phone"></i> Teléfono:
                                 </label>
                                 <input type="tel" class="form-control" id="telefono" name="telefono" required>
                             </div>
-                            <!-- Carga de Imagen de Usuario -->
+                            <!-- Imagen de Usuario -->
                             <div class="form-group">
                                 <label for="fecha_cumpleanos">
                                     <i class="fas fa-calendar-alt"></i> Fecha de Cumpleaños:

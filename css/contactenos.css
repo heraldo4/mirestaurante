@@ -35,8 +35,8 @@
 }
 
 h4 {
-    color: #fff !important; /* Color blanco para el texto del h2 */
-    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+    color: #fff !important; 
+    margin-bottom: 20px; 
     font-size: 50px;
     padding: 40px;
 }

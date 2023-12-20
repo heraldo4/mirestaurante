@@ -9,7 +9,7 @@
     margin-bottom: 20px;
 }
 
-/* Ajuste de la alineación de los íconos con el texto */
+
 .col-sm i {
     background-color: transparent;
     border-radius: 50%;
@@ -23,12 +23,12 @@
     -o-transition: background-color 0.3s ease-out;
 }
 
-/* Cambios en el color de fondo al pasar el ratón sobre los íconos */
+
 .col-sm i:hover {
     background-color: var(--echo);
 }
 
-/* Ajuste del tamaño de los íconos */
+
 .col-sm i {
     font-size: 4rem;
 }
@@ -37,14 +37,14 @@
     margin-bottom: 5px;
 }
 
-/* Ajuste del margen inferior entre las filas */
+
 .row {
     margin-bottom: 20px;
 }
 
 
 
-/* Estilo adicional para la descripción general */
+
 h4 {
     font-size: 1.2rem;
     color: var(--echo);
@@ -65,7 +65,7 @@ h5{
     margin-bottom: 50px;
 }
 
-/* Añadir bordes y esquinas redondeadas a las columnas */
+
 .col-sm {
     text-align: left;
     margin: 5px;

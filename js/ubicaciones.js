@@ -1,4 +1,4 @@
-// JSON con la información de restaurantes.
+//información de restaurantes.
 const restaurantes = [
     {
         nombre: "GreenBite Limón",

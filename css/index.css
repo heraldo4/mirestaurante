@@ -107,7 +107,7 @@ h5{
 
 }
 
-/* Estilo inicial para ocultar los elementos fuera de la pantalla */
+
 .carousel-caption-hidden {
     transform: translateX(-100%);
     opacity: 0;
@@ -118,7 +118,7 @@ h5{
     -o-transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 
-/* Estilo final para mostrar los elementos en su ubicación original */
+
 .carousel-caption-visible {
     transform: translateX(0);
     opacity: 1;
